@@ -26,7 +26,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $hidden = [
-        'password', 'remember_token',
+        'remember_token',
     ];
 
     public function location() {
@@ -35,5 +35,12 @@ class User extends Authenticatable
 
     public function friends() {
         return $this->belongsToMany('\App\User', 'friend_user', 'user_id', 'friends_id');
+    }
+
+    public function __toString()
+    {
+        $retData = $this->username . "; ". $this->password . "; " . $this->firstname . "; " . $this->lastname;
+
+        return $retData;
     }
 }

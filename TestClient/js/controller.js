@@ -24,7 +24,7 @@ $(document).ready(function () {
             "lastname" : lastname
         };
 
-        var storeUserLocation = "http://localhost.drive/user";
+        var storeUserLocation = "http://localhost.drive/user/register";
 
         $.ajax({
             method: "POST",

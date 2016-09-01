@@ -15,7 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::post('user', 'UserController@store');
+Route::any('user/register', 'UserController@store');
+Route::any('user/login', 'UserController@authenticate');
 Route::post('user/add_friend', 'UserController@addFriend');
 
 Route::get('tour/{username}/rank/{rank_value}', 'TourController@rankDriversTour');

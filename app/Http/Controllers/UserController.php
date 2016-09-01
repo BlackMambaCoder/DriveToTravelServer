@@ -10,42 +10,78 @@ use Illuminate\Support\Facades\Input;
 
 class UserController extends Controller
 {
+    const DATE_FORMAT = "d-M-Y H:i:s";
+    const LOG_FILE_NAME = "user_controller";
+
     public function index()
     {
         return;// '{zdravko :pijandura}';
     }
 
-    public function store() {
-        $requestData    = Input::get('user');
+    public function store(Request $request) {
+        $this->printToFile(">>>>>>>>>> store method <<<<<<<<<<");
+        $requestData    = file_get_contents('php://input');
+        $userJsonObject = json_decode($requestData, true);
 
         $userData       = [
-            'username' => $requestData['username'],
-            'password' => $requestData['password']
+            'username' => $userJsonObject['username'],
+            'password' => $userJsonObject['password']
         ];
+
+        $user           = User::where('username', $userData['username'])->first();
+
+
+        $this->printToFile($user);
+
+        if ($user != null) {
+            $this->printToFile('user ' . $userData['username'] . ' exists');
+            return response()->json('Username exists', 409);
+        }
 
         $user           = User::create($userData);
 
-        unset($requestData['username']);
-        unset($requestData['password']);
+        unset($userJsonObject['username']);
+        unset($userJsonObject['password']);
+        unset($userJsonObject['id']);
 
-        $user->setMeta($requestData);
+        $this->printToFile('user without username');
+        $this->printToFile(implode("; ", $userJsonObject));
+
+        $user->setMeta($userJsonObject);
         $user->save();
 
         $user->friends;
+
+        $this->printToFile("user to return: " . $user);
 
         return $user;
     }
 
     public function authenticate () {
-        $username = Input::get('username');
-        $password = Input::get('password');
+        $this->printToFile(">>>>>>>>>> authenticate method <<<<<<<<<<");
+        $requestData    = file_get_contents('php://input');
+        $userJsonObject = json_decode($requestData, true);
 
-        if (($user = User::where('username', $username)->first()) == null) {
-            return 'false username';
+
+        $this->printToFile($requestData);
+
+        $userData       = [
+            'username' => $userJsonObject['username'],
+            'password' => $userJsonObject['password']
+        ];
+
+        $user           = User::where('username', $userData['username'])->first();
+
+        $this->printToFile($user);
+
+        if ($user == null) {
+            $this->printToFile('user ' . $userData['username'] . ' does not exist');
+            return response()->json('Username does not exist', 404);
         }
 
-        if ($user->password != $password) {
-            return 'false password';
+        if ($user->password != $userData['password']) {
+            $this->printToFile('user password' . $userData['password'] . ' is incorrect');
+            return response()->json('Password is incorrect', 401);
         }
 
         $user->friends;
@@ -124,5 +160,15 @@ class UserController extends Controller
             $objects = $query->get()->push($object);
             $query->sync($objects);
         }
+    }
+
+    private function printToFile($message) {
+        $date = date(self::DATE_FORMAT);
+
+        $strMsg = $date . " <<< USER CONTROLLER >>> " . $message . "\n";
+
+        $path = base_path("log/" . self::LOG_FILE_NAME);
+
+        file_put_contents($path, $strMsg, FILE_APPEND | LOCK_EX);
     }
 }
