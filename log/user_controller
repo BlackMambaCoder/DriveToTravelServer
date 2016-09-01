@@ -1,0 +1,41 @@
+01-Sep-2016 21:14:23 <<< USER CONTROLLER >>> >>>>>>>>>> store method <<<<<<<<<<
+01-Sep-2016 21:14:23 <<< USER CONTROLLER >>> 
+01-Sep-2016 21:14:23 <<< USER CONTROLLER >>> user without username
+01-Sep-2016 21:14:23 <<< USER CONTROLLER >>> ; ; ; rado; 65; leo
+01-Sep-2016 21:14:23 <<< USER CONTROLLER >>> user to return: leo; pass; leo; rado
+01-Sep-2016 21:14:50 <<< USER CONTROLLER >>> >>>>>>>>>> store method <<<<<<<<<<
+01-Sep-2016 21:14:50 <<< USER CONTROLLER >>> 
+01-Sep-2016 21:14:50 <<< USER CONTROLLER >>> user without username
+01-Sep-2016 21:14:50 <<< USER CONTROLLER >>> ; ; ; rado; 65; leo
+01-Sep-2016 21:14:50 <<< USER CONTROLLER >>> user to return: leorado; password; leo; rado
+01-Sep-2016 21:15:21 <<< USER CONTROLLER >>> >>>>>>>>>> store method <<<<<<<<<<
+01-Sep-2016 21:15:21 <<< USER CONTROLLER >>> 
+01-Sep-2016 21:15:21 <<< USER CONTROLLER >>> user without username
+01-Sep-2016 21:15:21 <<< USER CONTROLLER >>> ; ; zdravko; 66; aca
+01-Sep-2016 21:15:21 <<< USER CONTROLLER >>> user to return: acko; password; aca; zdravko
+01-Sep-2016 21:18:35 <<< USER CONTROLLER >>> >>>>>>>>>> authenticate method <<<<<<<<<<
+01-Sep-2016 21:18:35 <<< USER CONTROLLER >>> {"password":"password","username":"leoradoh"}
+01-Sep-2016 21:18:35 <<< USER CONTROLLER >>> 
+01-Sep-2016 21:18:35 <<< USER CONTROLLER >>> user leoradoh does not exist
+01-Sep-2016 21:18:43 <<< USER CONTROLLER >>> >>>>>>>>>> authenticate method <<<<<<<<<<
+01-Sep-2016 21:18:43 <<< USER CONTROLLER >>> {"password":"passwordjo","username":"leorado"}
+01-Sep-2016 21:18:43 <<< USER CONTROLLER >>> leorado; password; leo; rado
+01-Sep-2016 21:18:43 <<< USER CONTROLLER >>> user passwordpasswordjo is incorrect
+01-Sep-2016 21:18:48 <<< USER CONTROLLER >>> >>>>>>>>>> authenticate method <<<<<<<<<<
+01-Sep-2016 21:18:48 <<< USER CONTROLLER >>> {"password":"password","username":"leorado"}
+01-Sep-2016 21:18:48 <<< USER CONTROLLER >>> leorado; password; leo; rado
+01-Sep-2016 21:19:11 <<< USER CONTROLLER >>> >>>>>>>>>> authenticate method <<<<<<<<<<
+01-Sep-2016 21:19:11 <<< USER CONTROLLER >>> {"password":"password","username":"ackoh"}
+01-Sep-2016 21:19:12 <<< USER CONTROLLER >>> 
+01-Sep-2016 21:19:12 <<< USER CONTROLLER >>> user ackoh does not exist
+01-Sep-2016 21:19:17 <<< USER CONTROLLER >>> >>>>>>>>>> authenticate method <<<<<<<<<<
+01-Sep-2016 21:19:17 <<< USER CONTROLLER >>> {"password":"passwordj","username":"acko"}
+01-Sep-2016 21:19:17 <<< USER CONTROLLER >>> acko; password; aca; zdravko
+01-Sep-2016 21:19:17 <<< USER CONTROLLER >>> user passwordpasswordj is incorrect
+01-Sep-2016 21:19:23 <<< USER CONTROLLER >>> >>>>>>>>>> authenticate method <<<<<<<<<<
+01-Sep-2016 21:19:23 <<< USER CONTROLLER >>> {"password":"passwordj","username":"acko"}
+01-Sep-2016 21:19:23 <<< USER CONTROLLER >>> acko; password; aca; zdravko
+01-Sep-2016 21:19:23 <<< USER CONTROLLER >>> user passwordpasswordj is incorrect
+01-Sep-2016 21:19:26 <<< USER CONTROLLER >>> >>>>>>>>>> authenticate method <<<<<<<<<<
+01-Sep-2016 21:19:26 <<< USER CONTROLLER >>> {"password":"password","username":"acko"}
+01-Sep-2016 21:19:26 <<< USER CONTROLLER >>> acko; password; aca; zdravko
