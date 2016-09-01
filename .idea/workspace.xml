@@ -41,23 +41,8 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="drive_to_travel_db.users" pinned="false" current-in-tab="true">
-        <entry file="dbDummy://dbtable:/8032f608/f4105956-fe45-402a-9de3-e5adc38e3133/drive_to_travel_db.users">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="drive_to_travel_db.users_meta" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/8032f608/f4105956-fe45-402a-9de3-e5adc38e3133/drive_to_travel_db.users_meta">
+      <file leaf-file-name="drive_to_travel_db.tours" pinned="false" current-in-tab="true">
+        <entry file="dbDummy://dbtable:/8032f608/f4105956-fe45-402a-9de3-e5adc38e3133/drive_to_travel_db.tours">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
               <filtering enabled="true" />
@@ -261,16 +246,16 @@
       <workItem from="1472392567036" duration="3290000" />
       <workItem from="1472490099702" duration="937000" />
       <workItem from="1472668695486" duration="614000" />
-      <workItem from="1472734878416" duration="18958000" />
+      <workItem from="1472734878416" duration="20087000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78615000" />
+    <option name="totallyTimeSpent" value="79744000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="47" y="24" width="1319" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23016496" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -646,18 +631,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/8032f608/f4105956-fe45-402a-9de3-e5adc38e3133/drive_to_travel_db.tours">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -742,6 +715,19 @@
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/8032f608/f4105956-fe45-402a-9de3-e5adc38e3133/drive_to_travel_db.users">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/8032f608/f4105956-fe45-402a-9de3-e5adc38e3133/drive_to_travel_db.tours">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />

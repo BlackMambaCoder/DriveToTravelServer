@@ -39,3 +39,21 @@
 01-Sep-2016 21:19:26 <<< USER CONTROLLER >>> >>>>>>>>>> authenticate method <<<<<<<<<<
 01-Sep-2016 21:19:26 <<< USER CONTROLLER >>> {"password":"password","username":"acko"}
 01-Sep-2016 21:19:26 <<< USER CONTROLLER >>> acko; password; aca; zdravko
+01-Sep-2016 21:30:30 <<< USER CONTROLLER >>> >>>>>>>>>> authenticate method <<<<<<<<<<
+01-Sep-2016 21:30:30 <<< USER CONTROLLER >>> {"password":"password","username":"leorado"}
+01-Sep-2016 21:30:30 <<< USER CONTROLLER >>> leorado; password; leo; rado
+01-Sep-2016 21:31:51 <<< USER CONTROLLER >>> >>>>>>>>>> authenticate method <<<<<<<<<<
+01-Sep-2016 21:31:51 <<< USER CONTROLLER >>> {"password":"password","username":"leorado"}
+01-Sep-2016 21:31:51 <<< USER CONTROLLER >>> leorado; password; leo; rado
+01-Sep-2016 21:33:55 <<< USER CONTROLLER >>> >>>>>>>>>> authenticate method <<<<<<<<<<
+01-Sep-2016 21:33:55 <<< USER CONTROLLER >>> {"password":"password","username":"leorado"}
+01-Sep-2016 21:33:55 <<< USER CONTROLLER >>> leorado; password; leo; rado
+01-Sep-2016 21:37:47 <<< USER CONTROLLER >>> >>>>>>>>>> authenticate method <<<<<<<<<<
+01-Sep-2016 21:37:47 <<< USER CONTROLLER >>> {"password":"password","username":"leorado"}
+01-Sep-2016 21:37:47 <<< USER CONTROLLER >>> leorado; password; leo; rado
+01-Sep-2016 21:40:29 <<< USER CONTROLLER >>> >>>>>>>>>> authenticate method <<<<<<<<<<
+01-Sep-2016 21:40:29 <<< USER CONTROLLER >>> {"password":"password","username":"leorado"}
+01-Sep-2016 21:40:29 <<< USER CONTROLLER >>> leorado; password; leo; rado
+01-Sep-2016 21:59:01 <<< USER CONTROLLER >>> >>>>>>>>>> authenticate method <<<<<<<<<<
+01-Sep-2016 21:59:01 <<< USER CONTROLLER >>> {"password":"password","username":"leorado"}
+01-Sep-2016 21:59:01 <<< USER CONTROLLER >>> leorado; password; leo; rado
