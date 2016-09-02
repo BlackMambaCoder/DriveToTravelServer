@@ -11,16 +11,18 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//    return view('welcome');
+//});
 
+Route::get('/', 'UserController@index');
 Route::any('user/register', 'UserController@store');
 Route::any('user/login', 'UserController@authenticate');
 Route::post('user/add_friend', 'UserController@addFriend');
 
 Route::get('tour/{username}/rank/{rank_value}', 'TourController@rankDriversTour');
-Route::post('tour/store', 'TourController@store');
+Route::any('tour/create', 'TourController@store');
+Route::any('tour/drivers', 'TourController@getDriversTours');
 
 Route::post('location/{userId}', 'LocationController@store');
 

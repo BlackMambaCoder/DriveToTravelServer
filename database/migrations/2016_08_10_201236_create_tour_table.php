@@ -14,6 +14,7 @@ class CreateTourTable extends Migration
     {
         Schema::create('tours', function (Blueprint $table) {
             $table->increments('id');
+
             $table->timestamps();
         });
     }

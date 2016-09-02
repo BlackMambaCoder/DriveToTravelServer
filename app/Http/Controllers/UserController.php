@@ -15,10 +15,40 @@ class UserController extends Controller
 
     public function index()
     {
-        return;// '{zdravko :pijandura}';
+        return response()->json("test", 200);
     }
 
-    public function store(Request $request) {
+    public function storeTour()
+    {
+        $this->printToFile(">>>>>>>>>> store method <<<<<<<<<<");
+        $requestData    = file_get_contents('php://input');
+        $userJsonObject = json_decode($requestData, true);
+
+        $driversUsername = $userJsonObject['tourdriver'];
+
+        $driver = User::where('username', $driversUsername)->first();
+
+        if ($driver == null)
+        {
+            $this->printToFile('No such driver: ' . $driversUsername);
+            return response()->json('No such driver', 499);
+        }
+
+        $tour = $driver->tours()->create();
+
+        unset($userJsonObject['tourdriver']);
+
+        $tour->setMeta($userJsonObject);
+        $tour->save();
+
+        $this->printToFile('Tour created:');
+        $this->printToFile($tour);
+
+        return $tour;
+    }
+
+    public function store()
+    {
         $this->printToFile(">>>>>>>>>> store method <<<<<<<<<<");
         $requestData    = file_get_contents('php://input');
         $userJsonObject = json_decode($requestData, true);
@@ -76,14 +106,16 @@ class UserController extends Controller
 
         if ($user == null) {
             $this->printToFile('user ' . $userData['username'] . ' does not exist');
-            return response()->json('Username does not exist', 404);
+            return response()->json('Username does not exist', 498);
         }
 
         if ($user->password != $userData['password']) {
             $this->printToFile('user password' . $userData['password'] . ' is incorrect');
-            return response()->json('Password is incorrect', 401);
+            return response()->json('Password is incorrect', 499);
         }
 
+        $this->printToFile("User logged in correctly");
+        $this->printToFile($user);
         $user->friends;
         return $user;
     }

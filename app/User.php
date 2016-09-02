@@ -37,6 +37,11 @@ class User extends Authenticatable
         return $this->belongsToMany('\App\User', 'friend_user', 'user_id', 'friends_id');
     }
 
+    public function tours()
+    {
+        return $this->hasMany('\App\Tour');
+    }
+
     public function __toString()
     {
         $retData = $this->username . "; ". $this->password . "; " . $this->firstname . "; " . $this->lastname;

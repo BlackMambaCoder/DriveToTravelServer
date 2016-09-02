@@ -11,6 +11,9 @@ use Illuminate\Support\Facades\Input;
 
 class TourController extends Controller
 {
+    const DATE_FORMAT = "d-M-Y H:i:s";
+    const LOG_FILE_NAME = "tour_controller";
+
     public function __construct()
     {
     }
@@ -43,10 +46,71 @@ class TourController extends Controller
         return $tour;
     }
 
-    public function store (Request $request)
+    public function store ()
     {
-        $postValue = $request->all();
-        var_dump($postValue);
+        $this->printToFile("\n>>>>>>>>>> store method <<<<<<<<<<");
+        $requestData    = file_get_contents('php://input');
+        $userJsonObject = json_decode($requestData, true);
+
+        $this->printToFile('users json object');
+        $this->printToFile($requestData);
+
+        $driversId = $userJsonObject['driver_id'];
+
+        $driver = User::find($driversId);
+
+        $this->printToFile("driver");
+        $this->printToFile($driver);
+
+        if ($driver == null)
+        {
+            $this->printToFile('No such driver: ' . $driversId);
+            return response()->json('No such driver', 499);
+        }
+
+        $tour = new Tour();
+        $tour->driver_id = $driver->id;
+        $tour->save();
+
+        unset($userJsonObject['driver_id']);
+        unset($userJsonObject['id']);
+
+        $tour->setMeta($userJsonObject);
+        $tour->save();
+
+        $this->printToFile('Tour created:');
+        $this->printToFile($tour);
+
+        return $tour;
+    }
+
+    public function getDriversTours()
+    {
+        $this->printToFile("\n>>>>>>>>>> getDriversTours <<<<<<<<<<");
+        $requestData    = file_get_contents('php://input');
+        $userJsonObject = json_decode($requestData, true);
+
+        $this->printToFile('users json object');
+        $this->printToFile($requestData);
+
+        $driversId = $userJsonObject['id'];
+
+        $driver = User::find($driversId);
+
+        $this->printToFile("driver");
+        $this->printToFile($driver);
+
+        if ($driver == null)
+        {
+            $this->printToFile('No such driver: ' . $driversId);
+            return response()->json('No such driver', 499);
+        }
+
+        $tours = $driver->tours()->get()->toArray();
+        $this->printToFile('Tours of driver '. $driver->username .':');
+        $this->printToFile($tours);
+
+        return $tours;
     }
 
     private function rankDriver($user, $rankValue) {
@@ -149,5 +213,15 @@ class TourController extends Controller
 
     private function toRadians($inputArg) {
         return ($inputArg * pi()) / 180.0;
+    }
+
+    private function printToFile($message) {
+        $date = date(self::DATE_FORMAT);
+
+        $strMsg = "<<< " . $date . " >>> " . $message . "\n";
+
+        $path = base_path("log/" . self::LOG_FILE_NAME);
+
+        file_put_contents($path, $strMsg, FILE_APPEND | LOCK_EX);
     }
 }
