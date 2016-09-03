@@ -18,34 +18,6 @@ class TourController extends Controller
     {
     }
 
-    public function search (Request $request)
-    {
-        $postValue = $request->all();
-
-        $tour = null;
-
-        if (count($postValue['data']) == 1)
-        {
-            // SEARCH BY DISTANCE
-
-            $distance = $postValue['data'][0];
-            $tour = Tour::where('distance', $distance)->get();
-        }
-        else
-        {
-            $startLocation      = $postValue['data'][0];
-            $endLocation        = $postValue['data'][1];
-            $time               = $postValue['data'][2];
-            $date               = $postValue['data'][3];
-            $tour = Tour::where(function ($query) use ($startLocation, $endLocation, $time, $date)
-            {
-
-            });
-        }
-
-        return $tour;
-    }
-
     public function store ()
     {
         $this->printToFile("\n>>>>>>>>>> store method <<<<<<<<<<");
@@ -106,9 +78,68 @@ class TourController extends Controller
             return response()->json('No such driver', 499);
         }
 
-        $tours = $driver->tours()->get()->toArray();
+        $tours = $driver->tours;
         $this->printToFile('Tours of driver '. $driver->username .':');
         $this->printToFile($tours);
+
+        return $tours;
+    }
+
+    public function getAllTours()
+    {
+        return Tour::all();
+    }
+
+    public function searchByLocation()
+    {
+        $this->printToFile("\n>>>>>>>>>> search by location method <<<<<<<<<<");
+        $requestData    = file_get_contents('php://input');
+//        $requestData    = '{ "startlocation": "newstara", "destinationlocation":"dest"}';
+        $jsonObject = json_decode($requestData, true);
+
+        $startLocation = $jsonObject['startlocation'];
+        $destLocation = $jsonObject['destinationlocation'];
+
+        $tours = Tour::all();
+
+        $tourStart = $tours->where(Tour::START_LOCATION, $startLocation);
+        $tourDest  = $tours->where(Tour::DESTINATION_LOCATION, $destLocation);
+
+        return $tourStart->merge($tourDest);
+
+    }
+
+
+
+    public function search (Request $request)
+    {
+        $requestData    = file_get_contents('php://input');
+        $userJsonObject = json_decode($requestData, true);
+//        $postValue = $request->all();
+
+        $tours = null;
+
+        if (count($userJsonObject['data']) == 1)
+        {
+            // SEARCH BY DISTANCE
+
+            $distance = $userJsonObject['data'][0];
+            $tours = Tour::where('distance', $distance)->get();
+        }
+        else
+        {
+            $startLocation      = $userJsonObject['data'][0];
+            $endLocation        = $userJsonObject['data'][1];
+            $datetime           = $userJsonObject['data'][2];
+
+            $query = Tour::query();
+
+            $query->where('startlocation', $startLocation);
+            $query->where('destinationlocation', $endLocation);
+            $query->where('dateandtime', $datetime);
+
+            $tours = $query->get();
+        }
 
         return $tours;
     }

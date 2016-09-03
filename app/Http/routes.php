@@ -23,6 +23,9 @@ Route::post('user/add_friend', 'UserController@addFriend');
 Route::get('tour/{username}/rank/{rank_value}', 'TourController@rankDriversTour');
 Route::any('tour/create', 'TourController@store');
 Route::any('tour/drivers', 'TourController@getDriversTours');
+Route::any('tour/all', 'TourController@getAllTours');
+Route::any('tour/update_rank', 'TourController@rankDriversTour');
+Route::any('tour/search_by_loc', 'TourController@searchByLocation');
 
 Route::post('location/{userId}', 'LocationController@store');
 

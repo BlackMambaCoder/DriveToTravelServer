@@ -39,7 +39,7 @@ class User extends Authenticatable
 
     public function tours()
     {
-        return $this->hasMany('\App\Tour');
+        return $this->hasMany('\App\Tour', 'driver_id', 'id');
     }
 
     public function __toString()

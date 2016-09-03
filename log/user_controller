@@ -217,3 +217,63 @@
 02-Sep-2016 21:19:07 <<< USER CONTROLLER >>> leorado; password; leo; rado
 02-Sep-2016 21:19:07 <<< USER CONTROLLER >>> User logged in correctly
 02-Sep-2016 21:19:07 <<< USER CONTROLLER >>> leorado; password; leo; rado
+03-Sep-2016 08:49:53 <<< USER CONTROLLER >>> >>>>>>>>>> authenticate method <<<<<<<<<<
+03-Sep-2016 08:49:53 <<< USER CONTROLLER >>> {"password":"password","username":"leorado"}
+03-Sep-2016 08:49:53 <<< USER CONTROLLER >>> leorado; password; leo; rado
+03-Sep-2016 08:49:53 <<< USER CONTROLLER >>> User logged in correctly
+03-Sep-2016 08:49:53 <<< USER CONTROLLER >>> leorado; password; leo; rado
+03-Sep-2016 08:53:27 <<< USER CONTROLLER >>> >>>>>>>>>> authenticate method <<<<<<<<<<
+03-Sep-2016 08:53:27 <<< USER CONTROLLER >>> {"password":"password","username":"leorado"}
+03-Sep-2016 08:53:27 <<< USER CONTROLLER >>> leorado; password; leo; rado
+03-Sep-2016 08:53:27 <<< USER CONTROLLER >>> User logged in correctly
+03-Sep-2016 08:53:27 <<< USER CONTROLLER >>> leorado; password; leo; rado
+03-Sep-2016 08:56:33 <<< USER CONTROLLER >>> >>>>>>>>>> authenticate method <<<<<<<<<<
+03-Sep-2016 08:56:33 <<< USER CONTROLLER >>> {"password":"password","username":"leorado"}
+03-Sep-2016 08:56:33 <<< USER CONTROLLER >>> leorado; password; leo; rado
+03-Sep-2016 08:56:33 <<< USER CONTROLLER >>> User logged in correctly
+03-Sep-2016 08:56:33 <<< USER CONTROLLER >>> leorado; password; leo; rado
+03-Sep-2016 08:57:04 <<< USER CONTROLLER >>> >>>>>>>>>> authenticate method <<<<<<<<<<
+03-Sep-2016 08:57:04 <<< USER CONTROLLER >>> {"password":"password","username":"leorado"}
+03-Sep-2016 08:57:04 <<< USER CONTROLLER >>> leorado; password; leo; rado
+03-Sep-2016 08:57:04 <<< USER CONTROLLER >>> User logged in correctly
+03-Sep-2016 08:57:04 <<< USER CONTROLLER >>> leorado; password; leo; rado
+03-Sep-2016 08:59:39 <<< USER CONTROLLER >>> >>>>>>>>>> authenticate method <<<<<<<<<<
+03-Sep-2016 08:59:39 <<< USER CONTROLLER >>> {"password":"password","username":"leorado"}
+03-Sep-2016 08:59:39 <<< USER CONTROLLER >>> leorado; password; leo; rado
+03-Sep-2016 08:59:39 <<< USER CONTROLLER >>> User logged in correctly
+03-Sep-2016 08:59:39 <<< USER CONTROLLER >>> leorado; password; leo; rado
+03-Sep-2016 09:24:34 <<< USER CONTROLLER >>> >>>>>>>>>> authenticate method <<<<<<<<<<
+03-Sep-2016 09:24:34 <<< USER CONTROLLER >>> {"password":"password","username":"acko"}
+03-Sep-2016 09:24:34 <<< USER CONTROLLER >>> acko; password; aca; zdravko
+03-Sep-2016 09:24:34 <<< USER CONTROLLER >>> User logged in correctly
+03-Sep-2016 09:24:34 <<< USER CONTROLLER >>> acko; password; aca; zdravko
+03-Sep-2016 09:25:51 <<< USER CONTROLLER >>> >>>>>>>>>> authenticate method <<<<<<<<<<
+03-Sep-2016 09:25:51 <<< USER CONTROLLER >>> {"password":"password","username":"acko"}
+03-Sep-2016 09:25:51 <<< USER CONTROLLER >>> acko; password; aca; zdravko
+03-Sep-2016 09:25:51 <<< USER CONTROLLER >>> User logged in correctly
+03-Sep-2016 09:25:51 <<< USER CONTROLLER >>> acko; password; aca; zdravko
+03-Sep-2016 09:27:07 <<< USER CONTROLLER >>> >>>>>>>>>> authenticate method <<<<<<<<<<
+03-Sep-2016 09:27:07 <<< USER CONTROLLER >>> {"password":"password","username":"acko"}
+03-Sep-2016 09:27:07 <<< USER CONTROLLER >>> acko; password; aca; zdravko
+03-Sep-2016 09:27:07 <<< USER CONTROLLER >>> User logged in correctly
+03-Sep-2016 09:27:07 <<< USER CONTROLLER >>> acko; password; aca; zdravko
+03-Sep-2016 09:45:12 <<< USER CONTROLLER >>> >>>>>>>>>> authenticate method <<<<<<<<<<
+03-Sep-2016 09:45:12 <<< USER CONTROLLER >>> {"password":"password","username":"acko"}
+03-Sep-2016 09:45:12 <<< USER CONTROLLER >>> acko; password; aca; zdravko
+03-Sep-2016 09:45:12 <<< USER CONTROLLER >>> User logged in correctly
+03-Sep-2016 09:45:12 <<< USER CONTROLLER >>> acko; password; aca; zdravko
+03-Sep-2016 10:13:55 <<< USER CONTROLLER >>> >>>>>>>>>> authenticate method <<<<<<<<<<
+03-Sep-2016 10:13:55 <<< USER CONTROLLER >>> {"password":"password","username":"leorado"}
+03-Sep-2016 10:13:55 <<< USER CONTROLLER >>> leorado; password; leo; rado
+03-Sep-2016 10:13:55 <<< USER CONTROLLER >>> User logged in correctly
+03-Sep-2016 10:13:55 <<< USER CONTROLLER >>> leorado; password; leo; rado
+03-Sep-2016 10:33:03 <<< USER CONTROLLER >>> >>>>>>>>>> authenticate method <<<<<<<<<<
+03-Sep-2016 10:33:03 <<< USER CONTROLLER >>> {"password":"password","username":"leorado"}
+03-Sep-2016 10:33:03 <<< USER CONTROLLER >>> leorado; password; leo; rado
+03-Sep-2016 10:33:03 <<< USER CONTROLLER >>> User logged in correctly
+03-Sep-2016 10:33:03 <<< USER CONTROLLER >>> leorado; password; leo; rado
+03-Sep-2016 11:47:33 <<< USER CONTROLLER >>> >>>>>>>>>> authenticate method <<<<<<<<<<
+03-Sep-2016 11:47:33 <<< USER CONTROLLER >>> {"password":"password","username":"leorado"}
+03-Sep-2016 11:47:33 <<< USER CONTROLLER >>> leorado; password; leo; rado
+03-Sep-2016 11:47:33 <<< USER CONTROLLER >>> User logged in correctly
+03-Sep-2016 11:47:33 <<< USER CONTROLLER >>> leorado; password; leo; rado
