@@ -47,6 +47,14 @@ class TourController extends Controller
         unset($userJsonObject['driver_id']);
         unset($userJsonObject['id']);
 
+        $dateandtime = $userJsonObject[Tour::DATE_AND_TIME];
+        $datePieces = explode(" ", $dateandtime);
+        $date = $datePieces[0] . " " . $datePieces[1] . " " . $datePieces[2] . " " . $datePieces[5];
+        $time = $datePieces[3] . " " . $datePieces[4];
+
+        $tour->date = $date;
+        $tour->time = $time;
+
         $tour->setMeta($userJsonObject);
         $tour->save();
 
@@ -79,6 +87,7 @@ class TourController extends Controller
         }
 
         $tours = $driver->tours;
+
         $this->printToFile('Tours of driver '. $driver->username .':');
         $this->printToFile($tours);
 
@@ -107,6 +116,91 @@ class TourController extends Controller
 
         return $tourStart->merge($tourDest);
 
+    }
+
+    public function searchByDriversUsername()
+    {
+        $this->printToFile("\n>>>>>>>>>> search by drivers username method <<<<<<<<<<");
+        $requestData    = file_get_contents('php://input');
+//        $requestData    = '{ "username": "acko" }';
+        $jsonObject = json_decode($requestData, true);
+
+        $driversUsername = $jsonObject['username'];
+
+        $driver = User::where(User::USERNAME, $driversUsername)->first();
+
+        return $driver->tours;
+    }
+
+    public function searchByDate()
+    {
+        $this->printToFile("\n>>>>>>>>>> search by date method <<<<<<<<<<");
+//        $requestData    = file_get_contents('php://input');
+        $requestData    = '{ "dateandtime": "acko" }';
+        $jsonObject = json_decode($requestData, true);
+
+        $dateandtime = $jsonObject[Tour::DATE_AND_TIME];
+        $datePieces = explode(" ", $dateandtime);
+        $date = $datePieces[0] . " " . $datePieces[1] . " " . $datePieces[2] . " " . $datePieces[5];
+
+        return Tour::all()->where('date', $date);
+    }
+
+    public function rankDriversTour () {
+        $this->printToFile("\n>>>>>>>>>> store method <<<<<<<<<<");
+        $requestData    = file_get_contents('php://input');
+        $jsonObject = json_decode($requestData, true);
+
+        $rankValue                  = $jsonObject['rank'];
+        $tourId                     = $jsonObject['tourid'];
+
+        $tour                       = Tour::find($tourId);
+
+        if ($tour->rank == -1) {
+            $tour->rank                 = 0.0;
+            $tour->no_of_ranks          = 0.0;
+        }
+
+        $allRank                    = $tour->rank *
+            $tour->no_of_ranks;
+        $allRank                   += $rankValue;
+        $tour->no_of_ranks         += 1;
+        $tour->rank                 = $allRank /
+            $tour->no_of_ranks;
+
+        $tour->save();
+
+        $user                       = $tour->user;
+
+        return $this->rankDriver($user, $tour->rank);
+    }
+
+    private function printToFile($message) {
+        $date = date(self::DATE_FORMAT);
+
+        $strMsg = "<<< " . $date . " >>> " . $message . "\n";
+
+        $path = base_path("log/" . self::LOG_FILE_NAME);
+
+        file_put_contents($path, $strMsg, FILE_APPEND | LOCK_EX);
+    }
+
+    private function rankDriver($user, $rankValue) {
+        if ($user->rank == null) {
+            $user->rank             = 0.0;
+            $user->no_of_ranks      = 0.0;
+        }
+
+        $allRank                    = $user->rank *
+            $user->no_of_ranks;
+        $allRank                   += $rankValue;
+        $user->no_of_ranks         += 1;
+        $user->rank                 = $allRank /
+            $user->no_of_ranks;
+
+        $user->save();
+
+        return $user->rank;
     }
 
 
@@ -142,48 +236,6 @@ class TourController extends Controller
         }
 
         return $tours;
-    }
-
-    private function rankDriver($user, $rankValue) {
-        if ($user->rank == null) {
-            $user->rank             = 0.0;
-            $user->no_of_ranks      = 0.0;
-        }
-
-        $allRank                    = $user->rank *
-                                        $user->no_of_ranks;
-        $allRank                   += $rankValue;
-        $user->no_of_ranks         += 1;
-        $user->rank                 = $allRank /
-                                        $user->no_of_ranks;
-
-        $user->save();
-
-        return $user->rank;
-    }
-
-    public function rankDriversTour () {
-        $rankValue                  = Input::get('rank');
-        $tourId                     = Input::get('tourid');
-
-        $tour                       = Tour::find($tourId);
-
-        if ($tour->rank == null) {
-            $tour->rank                 = 0.0;
-            $tour->no_of_ranks          = 0.0;
-        }
-
-        $allRank                    = $tour->rank *
-                                        $tour->no_of_ranks;
-        $allRank                   += $rankValue;
-        $tour->no_of_ranks         += 1;
-        $tour->rank                 = $allRank /
-                                        $tour->no_of_ranks;
-
-        $tour->save();
-
-        $user                       = $tour->user;
-        return $this->rankDriver($user, $tour->rank);
     }
 
     public function getNearTours() {
@@ -244,15 +296,5 @@ class TourController extends Controller
 
     private function toRadians($inputArg) {
         return ($inputArg * pi()) / 180.0;
-    }
-
-    private function printToFile($message) {
-        $date = date(self::DATE_FORMAT);
-
-        $strMsg = "<<< " . $date . " >>> " . $message . "\n";
-
-        $path = base_path("log/" . self::LOG_FILE_NAME);
-
-        file_put_contents($path, $strMsg, FILE_APPEND | LOCK_EX);
     }
 }

@@ -18,35 +18,6 @@ class UserController extends Controller
         return response()->json("test", 200);
     }
 
-    public function storeTour()
-    {
-        $this->printToFile(">>>>>>>>>> store method <<<<<<<<<<");
-        $requestData    = file_get_contents('php://input');
-        $userJsonObject = json_decode($requestData, true);
-
-        $driversUsername = $userJsonObject['tourdriver'];
-
-        $driver = User::where('username', $driversUsername)->first();
-
-        if ($driver == null)
-        {
-            $this->printToFile('No such driver: ' . $driversUsername);
-            return response()->json('No such driver', 499);
-        }
-
-        $tour = $driver->tours()->create();
-
-        unset($userJsonObject['tourdriver']);
-
-        $tour->setMeta($userJsonObject);
-        $tour->save();
-
-        $this->printToFile('Tour created:');
-        $this->printToFile($tour);
-
-        return $tour;
-    }
-
     public function store()
     {
         $this->printToFile(">>>>>>>>>> store method <<<<<<<<<<");
@@ -121,8 +92,12 @@ class UserController extends Controller
     }
 
     public function addFriend() {
-        $userId                     = Input::get('userid');
-        $friendsName                = Input::get('username');
+        $this->printToFile(">>>>>>>>>> addFriend method <<<<<<<<<<");
+        $requestData    = file_get_contents('php://input');
+        $jsonObject = json_decode($requestData, true);
+
+        $userId                     = $jsonObject['userid'];
+        $friendsName                = $jsonObject['username'];
 
         $user                       = User::find($userId);
         $friendUser                 = User::where(
@@ -131,22 +106,32 @@ class UserController extends Controller
                                             )->first();
 
         $this->attachOne($user->friends(), $friendUser);
+//        $this->attachOne($friendUser->friends(), $user);
     }
 
     public function removeFriend() {
-        $userId                     = Input::get('userid');
-        $friendId                   = Input::get('friendid');
+        $this->printToFile(">>>>>>>>>> removeFriend method <<<<<<<<<<");
+        $requestData    = file_get_contents('php://input');
+        $jsonObject = json_decode($requestData, true);
+
+        $userId                     = $jsonObject['userid'];
+        $friendsName                = $jsonObject['username'];
 
         $user                       = User::find($userId);
+        $friend                     = User::where(User::USERNAME, $friendsName)->first();
 
-        $user->friends()->detach($friendId);
+        $user->friends()->detach($friend->id);
 
         return $user->friends;
     }
 
     public function friendsWith() {
-        $firstUserName              = Input::get('firstuser');
-        $secondUserName             = Input::get('seconduser');
+        $this->printToFile("\n>>>>>>>>>> store method <<<<<<<<<<");
+        $requestData    = file_get_contents('php://input');
+        $userJsonObject = json_decode($requestData, true);
+
+        $firstUserName              = $userJsonObject['firstuser'];
+        $secondUserName             = $userJsonObject['seconduser'];
 
         $firstUser                  = User::where(
                                                 'username',
@@ -158,20 +143,24 @@ class UserController extends Controller
                                                 $secondUserName
                                             )->first();
 
-        if ($firstUser->friends->contains($secondUser->id)){
-            return "yes";
+        if ($firstUser->friends->contains($secondUser->id))
+        {
+            return response()->json('are friends', 200);
         }
-        else {
-            return "no";
-        }
+
+        return response()->json('not friends', 404);
     }
 
     public function storeUsersLocation () {
-        $usersId                    = Input::get('userid');
-        $latitude                   = Input::get('latitude');
-        $longitude                  = Input::get('longitude');
-        $altitude                   = Input::get('altitude');
-        $speed                      = Input::get('speed');
+        $this->printToFile("\n>>>>>>>>>> search by location method <<<<<<<<<<");
+        $requestData    = file_get_contents('php://input');
+        $jsonObject = json_decode($requestData, true);
+
+        $usersId                    = $jsonObject['userid'];
+        $latitude                   = $jsonObject['latitude'];
+        $longitude                  = $jsonObject['longitude'];
+        $altitude                   = $jsonObject['altitude'];
+        $speed                      = $jsonObject['speed'];
 
         $user                       = User::find($usersId);
         $locationData               = [
@@ -182,6 +171,15 @@ class UserController extends Controller
                                         ];
 
         $user->location()->create($locationData);
+    }
+
+    public function uploadBitmapImage()
+    {
+        $this->printToFile("\n>>>>>>>>>> upload bitmap method <<<<<<<<<<");
+        $requestData    = file_get_contents('php://input');
+        $userJsonObject = json_decode($requestData, true);
+
+        $this->printToFile($userJsonObject);
     }
 
     private function attachOne($query, $object) {
@@ -202,5 +200,36 @@ class UserController extends Controller
         $path = base_path("log/" . self::LOG_FILE_NAME);
 
         file_put_contents($path, $strMsg, FILE_APPEND | LOCK_EX);
+    }
+
+
+
+    public function storeTour()
+    {
+        $this->printToFile(">>>>>>>>>> store method <<<<<<<<<<");
+        $requestData    = file_get_contents('php://input');
+        $userJsonObject = json_decode($requestData, true);
+
+        $driversUsername = $userJsonObject['tourdriver'];
+
+        $driver = User::where('username', $driversUsername)->first();
+
+        if ($driver == null)
+        {
+            $this->printToFile('No such driver: ' . $driversUsername);
+            return response()->json('No such driver', 499);
+        }
+
+        $tour = $driver->tours()->create();
+
+        unset($userJsonObject['tourdriver']);
+
+        $tour->setMeta($userJsonObject);
+        $tour->save();
+
+        $this->printToFile('Tour created:');
+        $this->printToFile($tour);
+
+        return $tour;
     }
 }

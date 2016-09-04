@@ -9,6 +9,8 @@ class User extends Authenticatable
 {
     use Metable;
 
+    const USERNAME = 'username';
+
     protected $metaTable = 'users_meta';
 
     /**

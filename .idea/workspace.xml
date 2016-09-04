@@ -4,8 +4,8 @@
     <list default="true" id="0a7674ec-d309-4d4e-8b83-c736c7f87baf" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/TourController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/TourController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Tour.php" afterPath="$PROJECT_DIR$/app/Tour.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/User.php" afterPath="$PROJECT_DIR$/app/User.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/tour_controller" afterPath="$PROJECT_DIR$/log/tour_controller" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/user_controller" afterPath="$PROJECT_DIR$/log/user_controller" />
@@ -36,99 +36,94 @@
     <favorites_list name="DriveToTravel" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.54438335">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="TourController.php" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/app/Http/Controllers/TourController.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="139">
-                  <caret line="97" column="17" selection-start-line="97" selection-start-column="17" selection-end-line="97" selection-end-column="17" />
-                  <folding>
-                    <element signature="e#40#53#0#PHP" expanded="true" />
-                    <element signature="e#338#1344#0#PHP" expanded="false" />
-                    <element signature="e#1350#2182#0#PHP" expanded="false" />
-                    <element signature="e#2188#2257#0#PHP" expanded="false" />
-                    <element signature="e#3911#4462#0#PHP" expanded="false" />
-                    <element signature="e#4468#5271#0#PHP" expanded="false" />
-                    <element signature="e#5277#5808#0#PHP" expanded="false" />
-                    <element signature="e#5814#6543#0#PHP" expanded="false" />
-                    <element signature="e#6549#7309#0#PHP" expanded="false" />
-                    <element signature="e#7315#7403#0#PHP" expanded="false" />
-                    <element signature="e#7409#7684#0#PHP" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="drive_to_travel_db.tours_meta" pinned="false" current-in-tab="false">
-            <entry file="dbDummy://dbtable:/8032f608/f4105956-fe45-402a-9de3-e5adc38e3133/drive_to_travel_db.tours_meta">
-              <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-                <state>
-                  <filtering enabled="true" />
-                </state>
-              </provider>
-              <provider editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="drive_to_travel_db.tours" pinned="false" current-in-tab="false">
-            <entry file="dbDummy://dbtable:/8032f608/f4105956-fe45-402a-9de3-e5adc38e3133/drive_to_travel_db.tours">
-              <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-                <state>
-                  <filtering enabled="true" />
-                </state>
-              </provider>
-              <provider editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="TourController.php" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/app/Http/Controllers/TourController.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="794">
-                  <caret line="225" column="0" selection-start-line="225" selection-start-column="0" selection-end-line="225" selection-end-column="0" />
-                  <folding>
-                    <element signature="e#40#53#0#PHP" expanded="true" />
-                    <element signature="e#1350#2182#0#PHP" expanded="false" />
-                    <element signature="e#2188#2257#0#PHP" expanded="false" />
-                    <element signature="e#3911#4462#0#PHP" expanded="false" />
-                    <element signature="e#4468#5271#0#PHP" expanded="false" />
-                    <element signature="e#5277#5808#0#PHP" expanded="false" />
-                    <element signature="e#5814#6543#0#PHP" expanded="false" />
-                    <element signature="e#6549#7309#0#PHP" expanded="false" />
-                    <element signature="e#7315#7403#0#PHP" expanded="false" />
-                    <element signature="e#7409#7684#0#PHP" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="198">
-                  <caret line="20" column="59" selection-start-line="20" selection-start-column="59" selection-end-line="20" selection-end-column="59" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="17" column="65" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="65" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TourController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/TourController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="134" column="32" selection-start-line="134" selection-start-column="20" selection-end-line="134" selection-end-column="32" />
+              <folding>
+                <element signature="e#40#53#0#PHP" expanded="true" />
+                <element signature="e#338#1671#0#PHP" expanded="false" />
+                <element signature="e#1677#2510#0#PHP" expanded="false" />
+                <element signature="e#2516#2585#0#PHP" expanded="false" />
+                <element signature="e#2591#3273#0#PHP" expanded="false" />
+                <element signature="e#3279#3750#0#PHP" expanded="false" />
+                <element signature="e#3756#4307#0#PHP" expanded="false" />
+                <element signature="e#4313#5245#0#PHP" expanded="false" />
+                <element signature="e#5251#5526#0#PHP" expanded="false" />
+                <element signature="e#5532#6027#0#PHP" expanded="false" />
+                <element signature="e#6035#6987#0#PHP" expanded="false" />
+                <element signature="e#6993#7524#0#PHP" expanded="false" />
+                <element signature="e#7530#8259#0#PHP" expanded="false" />
+                <element signature="e#8265#9025#0#PHP" expanded="false" />
+                <element signature="e#9031#9119#0#PHP" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="13" column="44" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
+              <folding>
+                <element signature="e#366#1497#0#PHP" expanded="false" />
+                <element signature="e#1503#2604#0#PHP" expanded="false" />
+                <element signature="e#2610#3360#0#PHP" expanded="false" />
+                <element signature="e#3366#3947#0#PHP" expanded="false" />
+                <element signature="e#3953#4970#0#PHP" expanded="false" />
+                <element signature="e#4976#5995#0#PHP" expanded="false" />
+                <element signature="e#6295#6547#0#PHP" expanded="false" />
+                <element signature="e#6553#6839#0#PHP" expanded="false" />
+                <element signature="e#6847#7643#0#PHP" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="drive_to_travel_db.users" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/8032f608/f4105956-fe45-402a-9de3-e5adc38e3133/drive_to_travel_db.users">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="drive_to_travel_db.users_meta" pinned="false" current-in-tab="true">
+        <entry file="dbDummy://dbtable:/8032f608/f4105956-fe45-402a-9de3-e5adc38e3133/drive_to_travel_db.users_meta">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -166,11 +161,11 @@
         <option value="$PROJECT_DIR$/TestClient/js/controller.js" />
         <option value="$PROJECT_DIR$/database/migrations/2016_08_10_201236_create_tour_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2016_09_02_150553_add_user_id_column_to_tours.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/UserController.php" />
-        <option value="$PROJECT_DIR$/app/User.php" />
-        <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/app/Tour.php" />
+        <option value="$PROJECT_DIR$/app/User.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/TourController.php" />
+        <option value="$PROJECT_DIR$/app/Http/routes.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/UserController.php" />
       </list>
     </option>
   </component>
@@ -192,10 +187,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="47" />
     <option name="y" value="24" />
-    <option name="width" value="1319" />
-    <option name="height" value="744" />
+    <option name="width" value="1440" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -208,7 +202,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -221,19 +215,15 @@
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane />
-      </pane>
-      <pane id="Scratches" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -323,21 +313,23 @@
       <workItem from="1472822745453" duration="10997000" />
       <workItem from="1472888040774" duration="5126000" />
       <workItem from="1472907967707" duration="4909000" />
+      <workItem from="1472977763636" duration="5831000" />
+      <workItem from="1472994717229" duration="4419000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100776000" />
+    <option name="totallyTimeSpent" value="111026000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="47" y="24" width="1319" height="744" extended-state="6" />
+    <frame x="0" y="24" width="1440" height="876" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23016496" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21018651" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35113904" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35007173" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -365,9 +357,9 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23016496" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21018651" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35113904" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35007173" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32845744" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -388,18 +380,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -593,30 +578,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/8032f608/f4105956-fe45-402a-9de3-e5adc38e3133/drive_to_travel_db.users_meta">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/8032f608/f4105956-fe45-402a-9de3-e5adc38e3133/drive_to_travel_db.users">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://dbtable:/8032f608/f4105956-fe45-402a-9de3-e5adc38e3133/drive_to_travel_db.friend_user">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -725,33 +686,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="41" column="53" selection-start-line="41" selection-start-column="53" selection-end-line="41" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="20" column="59" selection-start-line="20" selection-start-column="59" selection-end-line="20" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Tour.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="56" column="49" selection-start-line="56" selection-start-column="49" selection-end-line="56" selection-end-column="49" />
+        <state relative-caret-position="324">
+          <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
           <folding>
             <element signature="e#710#807#0#PHP" expanded="false" />
             <element signature="e#813#933#0#PHP" expanded="false" />
@@ -787,23 +725,95 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-297">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.rocketeer/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="17" column="65" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/8032f608/f4105956-fe45-402a-9de3-e5adc38e3133/drive_to_travel_db.users">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="13" column="44" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
+          <folding>
+            <element signature="e#366#1497#0#PHP" expanded="false" />
+            <element signature="e#1503#2604#0#PHP" expanded="false" />
+            <element signature="e#2610#3360#0#PHP" expanded="false" />
+            <element signature="e#3366#3947#0#PHP" expanded="false" />
+            <element signature="e#3953#4970#0#PHP" expanded="false" />
+            <element signature="e#4976#5995#0#PHP" expanded="false" />
+            <element signature="e#6295#6547#0#PHP" expanded="false" />
+            <element signature="e#6553#6839#0#PHP" expanded="false" />
+            <element signature="e#6847#7643#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/TourController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="97" column="17" selection-start-line="97" selection-start-column="17" selection-end-line="97" selection-end-column="17" />
+        <state relative-caret-position="225">
+          <caret line="134" column="32" selection-start-line="134" selection-start-column="20" selection-end-line="134" selection-end-column="32" />
           <folding>
             <element signature="e#40#53#0#PHP" expanded="true" />
-            <element signature="e#338#1344#0#PHP" expanded="false" />
-            <element signature="e#1350#2182#0#PHP" expanded="false" />
-            <element signature="e#2188#2257#0#PHP" expanded="false" />
-            <element signature="e#3911#4462#0#PHP" expanded="false" />
-            <element signature="e#4468#5271#0#PHP" expanded="false" />
-            <element signature="e#5277#5808#0#PHP" expanded="false" />
-            <element signature="e#5814#6543#0#PHP" expanded="false" />
-            <element signature="e#6549#7309#0#PHP" expanded="false" />
-            <element signature="e#7315#7403#0#PHP" expanded="false" />
-            <element signature="e#7409#7684#0#PHP" expanded="false" />
+            <element signature="e#338#1671#0#PHP" expanded="false" />
+            <element signature="e#1677#2510#0#PHP" expanded="false" />
+            <element signature="e#2516#2585#0#PHP" expanded="false" />
+            <element signature="e#2591#3273#0#PHP" expanded="false" />
+            <element signature="e#3279#3750#0#PHP" expanded="false" />
+            <element signature="e#3756#4307#0#PHP" expanded="false" />
+            <element signature="e#4313#5245#0#PHP" expanded="false" />
+            <element signature="e#5251#5526#0#PHP" expanded="false" />
+            <element signature="e#5532#6027#0#PHP" expanded="false" />
+            <element signature="e#6035#6987#0#PHP" expanded="false" />
+            <element signature="e#6993#7524#0#PHP" expanded="false" />
+            <element signature="e#7530#8259#0#PHP" expanded="false" />
+            <element signature="e#8265#9025#0#PHP" expanded="false" />
+            <element signature="e#9031#9119#0#PHP" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/8032f608/f4105956-fe45-402a-9de3-e5adc38e3133/drive_to_travel_db.users_meta">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

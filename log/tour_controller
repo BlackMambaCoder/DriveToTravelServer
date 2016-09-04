@@ -686,3 +686,129 @@
 >>>>>>>>>> search by location method <<<<<<<<<<
 <<< 03-Sep-2016 14:16:25 >>> 
 >>>>>>>>>> search by location method <<<<<<<<<<
+<<< 04-Sep-2016 08:56:23 >>> 
+>>>>>>>>>> search by location method <<<<<<<<<<
+<<< 04-Sep-2016 08:56:39 >>> 
+>>>>>>>>>> search by location method <<<<<<<<<<
+<<< 04-Sep-2016 09:10:41 >>> 
+>>>>>>>>>> getDriversTours <<<<<<<<<<
+<<< 04-Sep-2016 09:10:41 >>> users json object
+<<< 04-Sep-2016 09:10:41 >>> {"id":57}
+<<< 04-Sep-2016 09:10:41 >>> driver
+<<< 04-Sep-2016 09:10:41 >>> leorado; password; leo; rado
+<<< 04-Sep-2016 09:10:41 >>> Tours of driver leorado:
+<<< 04-Sep-2016 09:10:41 >>> [{"id":18,"created_at":"2016-09-02 21:12:04","updated_at":"2016-09-02 21:12:04","driver_id":57,"passengers":[],"destinationlocation":"dest","rank":-1,"startlocation":"start","dateandtime":"Fri Sep 02 23:12:00 CEST 2016","meta_data":{"passengers":[],"destinationlocation":"dest","rank":-1,"startlocation":"start","dateandtime":"Fri Sep 02 23:12:00 CEST 2016"}},{"id":19,"created_at":"2016-09-02 21:14:01","updated_at":"2016-09-02 21:14:01","driver_id":57,"passengers":[],"destinationlocation":"hshd","rank":-1,"startlocation":"newstara","dateandtime":"Fri Sep 02 23:13:00 CEST 2016","meta_data":{"passengers":[],"destinationlocation":"hshd","rank":-1,"startlocation":"newstara","dateandtime":"Fri Sep 02 23:13:00 CEST 2016"}},{"id":20,"created_at":"2016-09-02 21:19:31","updated_at":"2016-09-02 21:19:31","driver_id":57,"passengers":[],"destinationlocation":"djddjdjjd","rank":-1,"startlocation":"star1","dateandtime":"Fri Sep 02 23:19:00 CEST 2016","meta_data":{"passengers":[],"destinationlocation":"djddjdjjd","rank":-1,"startlocation":"star1","dateandtime":"Fri Sep 02 23:19:00 CEST 2016"}},{"id":21,"created_at":"2016-09-03 08:56:53","updated_at":"2016-09-03 08:56:53","driver_id":57,"passengers":[],"destinationlocation":"dest","rank":-1,"startlocation":"danas","dateandtime":"Sat Sep 03 10:56:00 CEST 2016","meta_data":{"passengers":[],"destinationlocation":"dest","rank":-1,"startlocation":"danas","dateandtime":"Sat Sep 03 10:56:00 CEST 2016"}},{"id":22,"created_at":"2016-09-03 08:59:52","updated_at":"2016-09-03 08:59:52","driver_id":57,"passengers":[],"destinationlocation":"hshdhdhhdhd","rank":-1,"startlocation":"jdjdhdhdhd","dateandtime":"Sat Sep 03 10:59:00 CEST 2016","meta_data":{"passengers":[],"destinationlocation":"hshdhdhhdhd","rank":-1,"startlocation":"jdjdhdhdhd","dateandtime":"Sat Sep 03 10:59:00 CEST 2016"}},{"id":23,"created_at":"2016-09-03 10:14:50","updated_at":"2016-09-03 10:14:50","driver_id":57,"passengers":[],"destinationlocation":"t","rank":-1,"startlocation":"t","dateandtime":"Sat Sep 03 12:14:00 CEST 2016","meta_data":{"passengers":[],"destinationlocation":"t","rank":-1,"startlocation":"t","dateandtime":"Sat Sep 03 12:14:00 CEST 2016"}}]
+<<< 04-Sep-2016 09:11:07 >>> 
+>>>>>>>>>> store method <<<<<<<<<<
+<<< 04-Sep-2016 09:11:07 >>> users json object
+<<< 04-Sep-2016 09:11:07 >>> {"id":-1,"passengers":[],"destinationlocation":"jdhd","rank":-1,"driver_id":57,"startlocation":"new with date an time seperate","dateandtime":"Sun Sep 04 11:11:00 CEST 2016"}
+<<< 04-Sep-2016 09:11:07 >>> driver
+<<< 04-Sep-2016 09:11:07 >>> leorado; password; leo; rado
+<<< 04-Sep-2016 09:11:07 >>> Tour created:
+<<< 04-Sep-2016 09:11:07 >>> {"driver_id":57,"updated_at":"2016-09-04 09:11:07","created_at":"2016-09-04 09:11:07","id":24,"passengers":[],"destinationlocation":"jdhd","rank":-1,"startlocation":"new with date an time seperate","dateandtime":null,"meta_data":{"date":"SunSep042016","time":"11:11:00CEST","passengers":[],"destinationlocation":"jdhd","rank":-1,"startlocation":"new with date an time seperate"}}
+<<< 04-Sep-2016 09:11:35 >>> 
+>>>>>>>>>> getDriversTours <<<<<<<<<<
+<<< 04-Sep-2016 09:11:35 >>> users json object
+<<< 04-Sep-2016 09:11:35 >>> {"id":57}
+<<< 04-Sep-2016 09:11:35 >>> driver
+<<< 04-Sep-2016 09:11:35 >>> leorado; password; leo; rado
+<<< 04-Sep-2016 09:11:35 >>> Tours of driver leorado:
+<<< 04-Sep-2016 09:11:35 >>> [{"id":18,"created_at":"2016-09-02 21:12:04","updated_at":"2016-09-02 21:12:04","driver_id":57,"passengers":[],"destinationlocation":"dest","rank":-1,"startlocation":"start","dateandtime":"Fri Sep 02 23:12:00 CEST 2016","meta_data":{"passengers":[],"destinationlocation":"dest","rank":-1,"startlocation":"start","dateandtime":"Fri Sep 02 23:12:00 CEST 2016"}},{"id":19,"created_at":"2016-09-02 21:14:01","updated_at":"2016-09-02 21:14:01","driver_id":57,"passengers":[],"destinationlocation":"hshd","rank":-1,"startlocation":"newstara","dateandtime":"Fri Sep 02 23:13:00 CEST 2016","meta_data":{"passengers":[],"destinationlocation":"hshd","rank":-1,"startlocation":"newstara","dateandtime":"Fri Sep 02 23:13:00 CEST 2016"}},{"id":20,"created_at":"2016-09-02 21:19:31","updated_at":"2016-09-02 21:19:31","driver_id":57,"passengers":[],"destinationlocation":"djddjdjjd","rank":-1,"startlocation":"star1","dateandtime":"Fri Sep 02 23:19:00 CEST 2016","meta_data":{"passengers":[],"destinationlocation":"djddjdjjd","rank":-1,"startlocation":"star1","dateandtime":"Fri Sep 02 23:19:00 CEST 2016"}},{"id":21,"created_at":"2016-09-03 08:56:53","updated_at":"2016-09-03 08:56:53","driver_id":57,"passengers":[],"destinationlocation":"dest","rank":-1,"startlocation":"danas","dateandtime":"Sat Sep 03 10:56:00 CEST 2016","meta_data":{"passengers":[],"destinationlocation":"dest","rank":-1,"startlocation":"danas","dateandtime":"Sat Sep 03 10:56:00 CEST 2016"}},{"id":22,"created_at":"2016-09-03 08:59:52","updated_at":"2016-09-03 08:59:52","driver_id":57,"passengers":[],"destinationlocation":"hshdhdhhdhd","rank":-1,"startlocation":"jdjdhdhdhd","dateandtime":"Sat Sep 03 10:59:00 CEST 2016","meta_data":{"passengers":[],"destinationlocation":"hshdhdhhdhd","rank":-1,"startlocation":"jdjdhdhdhd","dateandtime":"Sat Sep 03 10:59:00 CEST 2016"}},{"id":23,"created_at":"2016-09-03 10:14:50","updated_at":"2016-09-03 10:14:50","driver_id":57,"passengers":[],"destinationlocation":"t","rank":-1,"startlocation":"t","dateandtime":"Sat Sep 03 12:14:00 CEST 2016","meta_data":{"passengers":[],"destinationlocation":"t","rank":-1,"startlocation":"t","dateandtime":"Sat Sep 03 12:14:00 CEST 2016"}},{"id":24,"created_at":"2016-09-04 09:11:07","updated_at":"2016-09-04 09:11:07","driver_id":57,"passengers":[],"destinationlocation":"jdhd","rank":-1,"startlocation":"new with date an time seperate","dateandtime":null,"meta_data":{"date":"SunSep042016","time":"11:11:00CEST","passengers":[],"destinationlocation":"jdhd","rank":-1,"startlocation":"new with date an time seperate"}}]
+<<< 04-Sep-2016 09:12:28 >>> 
+>>>>>>>>>> getDriversTours <<<<<<<<<<
+<<< 04-Sep-2016 09:12:28 >>> users json object
+<<< 04-Sep-2016 09:12:28 >>> {"id":57}
+<<< 04-Sep-2016 09:12:28 >>> driver
+<<< 04-Sep-2016 09:12:28 >>> leorado; password; leo; rado
+<<< 04-Sep-2016 09:12:28 >>> Tours of driver leorado:
+<<< 04-Sep-2016 09:12:28 >>> [{"id":18,"created_at":"2016-09-02 21:12:04","updated_at":"2016-09-02 21:12:04","driver_id":57,"passengers":[],"destinationlocation":"dest","rank":-1,"startlocation":"start","dateandtime":"Fri Sep 02 23:12:00 CEST 2016","meta_data":{"passengers":[],"destinationlocation":"dest","rank":-1,"startlocation":"start","dateandtime":"Fri Sep 02 23:12:00 CEST 2016"}},{"id":19,"created_at":"2016-09-02 21:14:01","updated_at":"2016-09-02 21:14:01","driver_id":57,"passengers":[],"destinationlocation":"hshd","rank":-1,"startlocation":"newstara","dateandtime":"Fri Sep 02 23:13:00 CEST 2016","meta_data":{"passengers":[],"destinationlocation":"hshd","rank":-1,"startlocation":"newstara","dateandtime":"Fri Sep 02 23:13:00 CEST 2016"}},{"id":20,"created_at":"2016-09-02 21:19:31","updated_at":"2016-09-02 21:19:31","driver_id":57,"passengers":[],"destinationlocation":"djddjdjjd","rank":-1,"startlocation":"star1","dateandtime":"Fri Sep 02 23:19:00 CEST 2016","meta_data":{"passengers":[],"destinationlocation":"djddjdjjd","rank":-1,"startlocation":"star1","dateandtime":"Fri Sep 02 23:19:00 CEST 2016"}},{"id":21,"created_at":"2016-09-03 08:56:53","updated_at":"2016-09-03 08:56:53","driver_id":57,"passengers":[],"destinationlocation":"dest","rank":-1,"startlocation":"danas","dateandtime":"Sat Sep 03 10:56:00 CEST 2016","meta_data":{"passengers":[],"destinationlocation":"dest","rank":-1,"startlocation":"danas","dateandtime":"Sat Sep 03 10:56:00 CEST 2016"}},{"id":22,"created_at":"2016-09-03 08:59:52","updated_at":"2016-09-03 08:59:52","driver_id":57,"passengers":[],"destinationlocation":"hshdhdhhdhd","rank":-1,"startlocation":"jdjdhdhdhd","dateandtime":"Sat Sep 03 10:59:00 CEST 2016","meta_data":{"passengers":[],"destinationlocation":"hshdhdhhdhd","rank":-1,"startlocation":"jdjdhdhdhd","dateandtime":"Sat Sep 03 10:59:00 CEST 2016"}},{"id":23,"created_at":"2016-09-03 10:14:50","updated_at":"2016-09-03 10:14:50","driver_id":57,"passengers":[],"destinationlocation":"t","rank":-1,"startlocation":"t","dateandtime":"Sat Sep 03 12:14:00 CEST 2016","meta_data":{"passengers":[],"destinationlocation":"t","rank":-1,"startlocation":"t","dateandtime":"Sat Sep 03 12:14:00 CEST 2016"}},{"id":24,"created_at":"2016-09-04 09:11:07","updated_at":"2016-09-04 09:11:07","driver_id":57,"passengers":[],"destinationlocation":"jdhd","rank":-1,"startlocation":"new with date an time seperate","dateandtime":null,"meta_data":{"date":"SunSep042016","time":"11:11:00CEST","passengers":[],"destinationlocation":"jdhd","rank":-1,"startlocation":"new with date an time seperate"}}]
+<<< 04-Sep-2016 09:12:42 >>> 
+>>>>>>>>>> getDriversTours <<<<<<<<<<
+<<< 04-Sep-2016 09:12:42 >>> users json object
+<<< 04-Sep-2016 09:12:42 >>> {"id":57}
+<<< 04-Sep-2016 09:12:42 >>> driver
+<<< 04-Sep-2016 09:12:42 >>> leorado; password; leo; rado
+<<< 04-Sep-2016 09:12:42 >>> Tours of driver leorado:
+<<< 04-Sep-2016 09:12:42 >>> [{"id":18,"created_at":"2016-09-02 21:12:04","updated_at":"2016-09-02 21:12:04","driver_id":57,"passengers":[],"destinationlocation":"dest","rank":-1,"startlocation":"start","dateandtime":"Fri Sep 02 23:12:00 CEST 2016","meta_data":{"passengers":[],"destinationlocation":"dest","rank":-1,"startlocation":"start","dateandtime":"Fri Sep 02 23:12:00 CEST 2016"}},{"id":19,"created_at":"2016-09-02 21:14:01","updated_at":"2016-09-02 21:14:01","driver_id":57,"passengers":[],"destinationlocation":"hshd","rank":-1,"startlocation":"newstara","dateandtime":"Fri Sep 02 23:13:00 CEST 2016","meta_data":{"passengers":[],"destinationlocation":"hshd","rank":-1,"startlocation":"newstara","dateandtime":"Fri Sep 02 23:13:00 CEST 2016"}},{"id":20,"created_at":"2016-09-02 21:19:31","updated_at":"2016-09-02 21:19:31","driver_id":57,"passengers":[],"destinationlocation":"djddjdjjd","rank":-1,"startlocation":"star1","dateandtime":"Fri Sep 02 23:19:00 CEST 2016","meta_data":{"passengers":[],"destinationlocation":"djddjdjjd","rank":-1,"startlocation":"star1","dateandtime":"Fri Sep 02 23:19:00 CEST 2016"}},{"id":21,"created_at":"2016-09-03 08:56:53","updated_at":"2016-09-03 08:56:53","driver_id":57,"passengers":[],"destinationlocation":"dest","rank":-1,"startlocation":"danas","dateandtime":"Sat Sep 03 10:56:00 CEST 2016","meta_data":{"passengers":[],"destinationlocation":"dest","rank":-1,"startlocation":"danas","dateandtime":"Sat Sep 03 10:56:00 CEST 2016"}},{"id":22,"created_at":"2016-09-03 08:59:52","updated_at":"2016-09-03 08:59:52","driver_id":57,"passengers":[],"destinationlocation":"hshdhdhhdhd","rank":-1,"startlocation":"jdjdhdhdhd","dateandtime":"Sat Sep 03 10:59:00 CEST 2016","meta_data":{"passengers":[],"destinationlocation":"hshdhdhhdhd","rank":-1,"startlocation":"jdjdhdhdhd","dateandtime":"Sat Sep 03 10:59:00 CEST 2016"}},{"id":23,"created_at":"2016-09-03 10:14:50","updated_at":"2016-09-03 10:14:50","driver_id":57,"passengers":[],"destinationlocation":"t","rank":-1,"startlocation":"t","dateandtime":"Sat Sep 03 12:14:00 CEST 2016","meta_data":{"passengers":[],"destinationlocation":"t","rank":-1,"startlocation":"t","dateandtime":"Sat Sep 03 12:14:00 CEST 2016"}},{"id":24,"created_at":"2016-09-04 09:11:07","updated_at":"2016-09-04 09:11:07","driver_id":57,"passengers":[],"destinationlocation":"jdhd","rank":-1,"startlocation":"new with date an time seperate","dateandtime":null,"meta_data":{"date":"SunSep042016","time":"11:11:00CEST","passengers":[],"destinationlocation":"jdhd","rank":-1,"startlocation":"new with date an time seperate"}}]
+<<< 04-Sep-2016 09:12:51 >>> 
+>>>>>>>>>> getDriversTours <<<<<<<<<<
+<<< 04-Sep-2016 09:12:51 >>> users json object
+<<< 04-Sep-2016 09:12:51 >>> {"id":57}
+<<< 04-Sep-2016 09:12:51 >>> driver
+<<< 04-Sep-2016 09:12:51 >>> leorado; password; leo; rado
+<<< 04-Sep-2016 09:12:51 >>> Tours of driver leorado:
+<<< 04-Sep-2016 09:12:51 >>> [{"id":18,"created_at":"2016-09-02 21:12:04","updated_at":"2016-09-02 21:12:04","driver_id":57,"passengers":[],"destinationlocation":"dest","rank":-1,"startlocation":"start","dateandtime":"Fri Sep 02 23:12:00 CEST 2016","meta_data":{"passengers":[],"destinationlocation":"dest","rank":-1,"startlocation":"start","dateandtime":"Fri Sep 02 23:12:00 CEST 2016"}},{"id":19,"created_at":"2016-09-02 21:14:01","updated_at":"2016-09-02 21:14:01","driver_id":57,"passengers":[],"destinationlocation":"hshd","rank":-1,"startlocation":"newstara","dateandtime":"Fri Sep 02 23:13:00 CEST 2016","meta_data":{"passengers":[],"destinationlocation":"hshd","rank":-1,"startlocation":"newstara","dateandtime":"Fri Sep 02 23:13:00 CEST 2016"}},{"id":20,"created_at":"2016-09-02 21:19:31","updated_at":"2016-09-02 21:19:31","driver_id":57,"passengers":[],"destinationlocation":"djddjdjjd","rank":-1,"startlocation":"star1","dateandtime":"Fri Sep 02 23:19:00 CEST 2016","meta_data":{"passengers":[],"destinationlocation":"djddjdjjd","rank":-1,"startlocation":"star1","dateandtime":"Fri Sep 02 23:19:00 CEST 2016"}},{"id":21,"created_at":"2016-09-03 08:56:53","updated_at":"2016-09-03 08:56:53","driver_id":57,"passengers":[],"destinationlocation":"dest","rank":-1,"startlocation":"danas","dateandtime":"Sat Sep 03 10:56:00 CEST 2016","meta_data":{"passengers":[],"destinationlocation":"dest","rank":-1,"startlocation":"danas","dateandtime":"Sat Sep 03 10:56:00 CEST 2016"}},{"id":22,"created_at":"2016-09-03 08:59:52","updated_at":"2016-09-03 08:59:52","driver_id":57,"passengers":[],"destinationlocation":"hshdhdhhdhd","rank":-1,"startlocation":"jdjdhdhdhd","dateandtime":"Sat Sep 03 10:59:00 CEST 2016","meta_data":{"passengers":[],"destinationlocation":"hshdhdhhdhd","rank":-1,"startlocation":"jdjdhdhdhd","dateandtime":"Sat Sep 03 10:59:00 CEST 2016"}},{"id":23,"created_at":"2016-09-03 10:14:50","updated_at":"2016-09-03 10:14:50","driver_id":57,"passengers":[],"destinationlocation":"t","rank":-1,"startlocation":"t","dateandtime":"Sat Sep 03 12:14:00 CEST 2016","meta_data":{"passengers":[],"destinationlocation":"t","rank":-1,"startlocation":"t","dateandtime":"Sat Sep 03 12:14:00 CEST 2016"}},{"id":24,"created_at":"2016-09-04 09:11:07","updated_at":"2016-09-04 09:11:07","driver_id":57,"passengers":[],"destinationlocation":"jdhd","rank":-1,"startlocation":"new with date an time seperate","dateandtime":null,"meta_data":{"date":"SunSep042016","time":"11:11:00CEST","passengers":[],"destinationlocation":"jdhd","rank":-1,"startlocation":"new with date an time seperate"}}]
+<<< 04-Sep-2016 09:13:23 >>> 
+>>>>>>>>>> getDriversTours <<<<<<<<<<
+<<< 04-Sep-2016 09:13:23 >>> users json object
+<<< 04-Sep-2016 09:13:23 >>> {"id":57}
+<<< 04-Sep-2016 09:13:23 >>> driver
+<<< 04-Sep-2016 09:13:23 >>> leorado; password; leo; rado
+<<< 04-Sep-2016 09:13:23 >>> Tours of driver leorado:
+<<< 04-Sep-2016 09:13:23 >>> [{"id":18,"created_at":"2016-09-02 21:12:04","updated_at":"2016-09-02 21:12:04","driver_id":57,"passengers":[],"destinationlocation":"dest","rank":-1,"startlocation":"start","dateandtime":"Fri Sep 02 23:12:00 CEST 2016","meta_data":{"passengers":[],"destinationlocation":"dest","rank":-1,"startlocation":"start","dateandtime":"Fri Sep 02 23:12:00 CEST 2016"}},{"id":19,"created_at":"2016-09-02 21:14:01","updated_at":"2016-09-02 21:14:01","driver_id":57,"passengers":[],"destinationlocation":"hshd","rank":-1,"startlocation":"newstara","dateandtime":"Fri Sep 02 23:13:00 CEST 2016","meta_data":{"passengers":[],"destinationlocation":"hshd","rank":-1,"startlocation":"newstara","dateandtime":"Fri Sep 02 23:13:00 CEST 2016"}},{"id":20,"created_at":"2016-09-02 21:19:31","updated_at":"2016-09-02 21:19:31","driver_id":57,"passengers":[],"destinationlocation":"djddjdjjd","rank":-1,"startlocation":"star1","dateandtime":"Fri Sep 02 23:19:00 CEST 2016","meta_data":{"passengers":[],"destinationlocation":"djddjdjjd","rank":-1,"startlocation":"star1","dateandtime":"Fri Sep 02 23:19:00 CEST 2016"}},{"id":21,"created_at":"2016-09-03 08:56:53","updated_at":"2016-09-03 08:56:53","driver_id":57,"passengers":[],"destinationlocation":"dest","rank":-1,"startlocation":"danas","dateandtime":"Sat Sep 03 10:56:00 CEST 2016","meta_data":{"passengers":[],"destinationlocation":"dest","rank":-1,"startlocation":"danas","dateandtime":"Sat Sep 03 10:56:00 CEST 2016"}},{"id":22,"created_at":"2016-09-03 08:59:52","updated_at":"2016-09-03 08:59:52","driver_id":57,"passengers":[],"destinationlocation":"hshdhdhhdhd","rank":-1,"startlocation":"jdjdhdhdhd","dateandtime":"Sat Sep 03 10:59:00 CEST 2016","meta_data":{"passengers":[],"destinationlocation":"hshdhdhhdhd","rank":-1,"startlocation":"jdjdhdhdhd","dateandtime":"Sat Sep 03 10:59:00 CEST 2016"}},{"id":23,"created_at":"2016-09-03 10:14:50","updated_at":"2016-09-03 10:14:50","driver_id":57,"passengers":[],"destinationlocation":"t","rank":-1,"startlocation":"t","dateandtime":"Sat Sep 03 12:14:00 CEST 2016","meta_data":{"passengers":[],"destinationlocation":"t","rank":-1,"startlocation":"t","dateandtime":"Sat Sep 03 12:14:00 CEST 2016"}},{"id":24,"created_at":"2016-09-04 09:11:07","updated_at":"2016-09-04 09:11:07","driver_id":57,"passengers":[],"destinationlocation":"jdhd","rank":-1,"startlocation":"new with date an time seperate","dateandtime":null,"meta_data":{"date":"SunSep042016","time":"11:11:00CEST","passengers":[],"destinationlocation":"jdhd","rank":-1,"startlocation":"new with date an time seperate"}}]
+<<< 04-Sep-2016 09:20:12 >>> 
+>>>>>>>>>> search by drivers username method <<<<<<<<<<
+<<< 04-Sep-2016 11:41:25 >>> 
+>>>>>>>>>> getDriversTours <<<<<<<<<<
+<<< 04-Sep-2016 11:41:25 >>> users json object
+<<< 04-Sep-2016 11:41:25 >>> {"id":62}
+<<< 04-Sep-2016 11:41:25 >>> driver
+<<< 04-Sep-2016 11:41:25 >>> leo; pass; leo; rado
+<<< 04-Sep-2016 11:41:25 >>> Tours of driver leo:
+<<< 04-Sep-2016 11:41:25 >>> []
+<<< 04-Sep-2016 11:41:45 >>> 
+>>>>>>>>>> store method <<<<<<<<<<
+<<< 04-Sep-2016 11:41:45 >>> users json object
+<<< 04-Sep-2016 11:41:45 >>> {"id":-1,"passengers":[],"destinationlocation":"x","rank":-1,"driver_id":62,"startlocation":"hello","dateandtime":"Sun Sep 04 13:41:00 CEST 2016"}
+<<< 04-Sep-2016 11:41:45 >>> driver
+<<< 04-Sep-2016 11:41:45 >>> leo; pass; leo; rado
+<<< 04-Sep-2016 11:41:45 >>> Tour created:
+<<< 04-Sep-2016 11:41:45 >>> {"driver_id":62,"updated_at":"2016-09-04 11:41:45","created_at":"2016-09-04 11:41:45","id":25,"passengers":[],"destinationlocation":"x","rank":-1,"startlocation":"hello","dateandtime":null,"meta_data":{"date":"Sun Sep 04 2016","time":"13:41:00 CEST","passengers":[],"destinationlocation":"x","rank":-1,"startlocation":"hello"}}
+<<< 04-Sep-2016 11:45:15 >>> 
+>>>>>>>>>> store method <<<<<<<<<<
+<<< 04-Sep-2016 11:45:15 >>> users json object
+<<< 04-Sep-2016 11:45:15 >>> {"id":-1,"passengers":[],"destinationlocation":"d","rank":-1,"driver_id":62,"startlocation":"d","dateandtime":"Sun Sep 04 13:45:00 CEST 2016"}
+<<< 04-Sep-2016 11:45:15 >>> driver
+<<< 04-Sep-2016 11:45:15 >>> leo; pass; leo; rado
+<<< 04-Sep-2016 11:45:16 >>> Tour created:
+<<< 04-Sep-2016 11:45:16 >>> {"driver_id":62,"updated_at":"2016-09-04 11:45:15","created_at":"2016-09-04 11:45:15","id":26,"passengers":[],"destinationlocation":"d","rank":-1,"startlocation":"d","dateandtime":"Sun Sep 04 13:45:00 CEST 2016","meta_data":{"date":"Sun Sep 04 2016","time":"13:45:00 CEST","passengers":[],"destinationlocation":"d","rank":-1,"startlocation":"d","dateandtime":"Sun Sep 04 13:45:00 CEST 2016"}}
+<<< 04-Sep-2016 13:34:00 >>> 
+>>>>>>>>>> getDriversTours <<<<<<<<<<
+<<< 04-Sep-2016 13:34:00 >>> users json object
+<<< 04-Sep-2016 13:34:00 >>> {"id":62}
+<<< 04-Sep-2016 13:34:00 >>> driver
+<<< 04-Sep-2016 13:34:00 >>> leo; pass; leo; rado
+<<< 04-Sep-2016 13:34:00 >>> Tours of driver leo:
+<<< 04-Sep-2016 13:34:00 >>> [{"id":26,"created_at":"2016-09-04 11:45:15","updated_at":"2016-09-04 11:45:15","driver_id":62,"passengers":[],"destinationlocation":"d","rank":-1,"startlocation":"d","dateandtime":"Sun Sep 04 13:45:00 CEST 2016","meta_data":{"date":"Sun Sep 04 2016","time":"13:45:00 CEST","passengers":[],"destinationlocation":"d","rank":-1,"startlocation":"d","dateandtime":"Sun Sep 04 13:45:00 CEST 2016"}}]
+<<< 04-Sep-2016 13:34:25 >>> 
+>>>>>>>>>> store method <<<<<<<<<<
+<<< 04-Sep-2016 13:34:25 >>> users json object
+<<< 04-Sep-2016 13:34:25 >>> {"id":-1,"passengers":[],"destinationlocation":"sest","rank":-1,"driver_id":62,"startlocation":"start","dateandtime":"Sun Sep 04 15:34:00 CEST 2016"}
+<<< 04-Sep-2016 13:34:25 >>> driver
+<<< 04-Sep-2016 13:34:25 >>> leo; pass; leo; rado
+<<< 04-Sep-2016 13:34:25 >>> Tour created:
+<<< 04-Sep-2016 13:34:25 >>> {"driver_id":62,"updated_at":"2016-09-04 13:34:25","created_at":"2016-09-04 13:34:25","id":27,"passengers":[],"destinationlocation":"sest","rank":-1,"startlocation":"start","dateandtime":"Sun Sep 04 15:34:00 CEST 2016","meta_data":{"date":"Sun Sep 04 2016","time":"15:34:00 CEST","passengers":[],"destinationlocation":"sest","rank":-1,"startlocation":"start","dateandtime":"Sun Sep 04 15:34:00 CEST 2016"}}
+<<< 04-Sep-2016 13:45:21 >>> 
+>>>>>>>>>> getDriversTours <<<<<<<<<<
+<<< 04-Sep-2016 13:45:21 >>> users json object
+<<< 04-Sep-2016 13:45:21 >>> {"id":62}
+<<< 04-Sep-2016 13:45:21 >>> driver
+<<< 04-Sep-2016 13:45:21 >>> leo; pass; leo; rado
+<<< 04-Sep-2016 13:45:21 >>> Tours of driver leo:
+<<< 04-Sep-2016 13:45:21 >>> [{"id":26,"created_at":"2016-09-04 11:45:15","updated_at":"2016-09-04 11:45:15","driver_id":62,"passengers":[],"destinationlocation":"d","rank":-1,"startlocation":"d","dateandtime":"Sun Sep 04 13:45:00 CEST 2016","meta_data":{"date":"Sun Sep 04 2016","time":"13:45:00 CEST","passengers":[],"destinationlocation":"d","rank":-1,"startlocation":"d","dateandtime":"Sun Sep 04 13:45:00 CEST 2016"}},{"id":27,"created_at":"2016-09-04 13:34:25","updated_at":"2016-09-04 13:34:25","driver_id":62,"passengers":[],"destinationlocation":"sest","rank":-1,"startlocation":"start","dateandtime":"Sun Sep 04 15:34:00 CEST 2016","meta_data":{"date":"Sun Sep 04 2016","time":"15:34:00 CEST","passengers":[],"destinationlocation":"sest","rank":-1,"startlocation":"start","dateandtime":"Sun Sep 04 15:34:00 CEST 2016"}}]
+<<< 04-Sep-2016 14:35:59 >>> 
+>>>>>>>>>> getDriversTours <<<<<<<<<<
+<<< 04-Sep-2016 14:35:59 >>> users json object
+<<< 04-Sep-2016 14:35:59 >>> {"id":62}
+<<< 04-Sep-2016 14:35:59 >>> driver
+<<< 04-Sep-2016 14:35:59 >>> leo; pass; leo; rado
+<<< 04-Sep-2016 14:35:59 >>> Tours of driver leo:
+<<< 04-Sep-2016 14:35:59 >>> [{"id":26,"created_at":"2016-09-04 11:45:15","updated_at":"2016-09-04 11:45:15","driver_id":62,"passengers":[],"destinationlocation":"d","rank":-1,"startlocation":"d","dateandtime":"Sun Sep 04 13:45:00 CEST 2016","meta_data":{"date":"Sun Sep 04 2016","time":"13:45:00 CEST","passengers":[],"destinationlocation":"d","rank":-1,"startlocation":"d","dateandtime":"Sun Sep 04 13:45:00 CEST 2016"}},{"id":27,"created_at":"2016-09-04 13:34:25","updated_at":"2016-09-04 13:34:25","driver_id":62,"passengers":[],"destinationlocation":"sest","rank":-1,"startlocation":"start","dateandtime":"Sun Sep 04 15:34:00 CEST 2016","meta_data":{"date":"Sun Sep 04 2016","time":"15:34:00 CEST","passengers":[],"destinationlocation":"sest","rank":-1,"startlocation":"start","dateandtime":"Sun Sep 04 15:34:00 CEST 2016"}}]
+<<< 04-Sep-2016 15:28:25 >>> 
+>>>>>>>>>> getDriversTours <<<<<<<<<<
+<<< 04-Sep-2016 15:28:25 >>> users json object
+<<< 04-Sep-2016 15:28:25 >>> {"id":63}
+<<< 04-Sep-2016 15:28:25 >>> driver
+<<< 04-Sep-2016 15:28:25 >>> d; d; d; d
+<<< 04-Sep-2016 15:28:25 >>> Tours of driver d:
+<<< 04-Sep-2016 15:28:25 >>> []
