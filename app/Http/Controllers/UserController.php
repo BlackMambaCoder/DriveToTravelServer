@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Tour;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Input;
@@ -107,6 +108,8 @@ class UserController extends Controller
 
         $this->attachOne($user->friends(), $friendUser);
 //        $this->attachOne($friendUser->friends(), $user);
+
+        return response()->json('users are friends');
     }
 
     public function removeFriend() {
@@ -182,6 +185,47 @@ class UserController extends Controller
         $this->printToFile($userJsonObject);
     }
 
+    public function updateUserLocation()
+    {
+        $this->printToFile("\n>>>>>>>>>> upload bitmap method <<<<<<<<<<");
+        $requestData    = file_get_contents('php://input');
+        $jsonObject = json_decode($requestData, true);
+
+        $longitude = $jsonObject['longitude'];
+        $latitude = $jsonObject['latitude'];
+        $userId = $jsonObject['userid'];
+        $distance = $jsonObject['distance'];
+
+        $user = User::find($userId);
+
+        if ($user->location == null)
+        {
+            $user->location()->create(['longitude' => $longitude, 'latitude' => $latitude]);
+        }
+        else
+        {
+            $location = $user->location;
+            $location->longitude = -3.0;
+            $location->latitude = -4.0;
+
+            $location->save();
+        }
+
+        return $this->getNearUsers($user, $distance);
+//
+//        $tours = Tour::all();
+//
+//        foreach ($tours as $tour)
+//        {
+//            if (in_array($user->username, $tour->passengers))
+//            {
+//                return $tour->passengers;
+//            }
+//        }
+//
+//        return response()->json('error', 404);
+    }
+
     private function attachOne($query, $object) {
         if ($query->get()->isEmpty()) {
             $query->attach($object);
@@ -202,6 +246,63 @@ class UserController extends Controller
         file_put_contents($path, $strMsg, FILE_APPEND | LOCK_EX);
     }
 
+    private function getNearUsers($user, $minDistance)
+    {
+        $usersFriends = $user->friends;
+        $usersLatitude = $user->location->latitude;
+        $usersLongitude = $user->location->longitude;
+        $nearUsers = [];
+
+        if ($usersLatitude == null || $usersLongitude == null)
+        {
+            return null;
+        }
+
+        foreach ($usersFriends as $friend)
+        {
+            if (
+                $friend->location->latitude == null ||
+                $friend->location->longitude == null
+            )
+            {
+                continue;
+            }
+
+            $distance = $this->calculateDistance(
+                            $usersLatitude,
+                            $usersLongitude,
+                            $friend->location->latitude,
+                            $friend->location->longitude
+                        );
+
+            $distance = abs($distance);
+
+            if ($distance < $minDistance)
+            {
+                $nearUsers[] = $friend;
+            }
+        }
+
+        return $nearUsers;
+    }
+
+    private function calculateDistance($lat1Arg, $lng1Arg, $lat2Arg, $lng2Arg) {
+        $earthRadius            = 6371000.0;
+
+        $lat1Radians            = $this->toRadians($lat1Arg);
+        $lat2Radians            = $this->toRadians($lat2Arg);
+
+        $latDifference          = $this->toRadians($lat2Arg - $lat1Arg);
+        $lngDifference          = $this->toRadians($lng2Arg - $lng1Arg);
+
+        $a                      = sin($latDifference/2.0) * sin($latDifference/2.0) +
+            cos($lat1Radians) * cos($lat2Radians) *
+            sin($lngDifference / 2.0) * sin($lngDifference / 2.0);
+
+        $c                      = 2 * atan2(sqrt($a), sqrt(1.0 - $a));
+
+        return $earthRadius * $c;
+    }
 
 
     public function storeTour()

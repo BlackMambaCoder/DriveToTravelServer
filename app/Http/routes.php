@@ -18,6 +18,7 @@ Route::any('user/login', 'UserController@authenticate');
 Route::any('user/upload_image', 'UserController@uploadBitmapImage');
 Route::any('user/friend', 'UserController@friendsWith');
 Route::any('user/add_friend', 'UserController@addFriend');
+Route::any('user/update_location', 'UserController@updateUserLocation');
 
 Route::get('tour/{username}/rank/{rank_value}', 'TourController@rankDriversTour');
 Route::any('tour/create', 'TourController@store');
@@ -28,6 +29,8 @@ Route::any('tour/search_by_location', 'TourController@searchByLocation');
 Route::any('tour/search_by_driver', 'TourController@searchByDriversUsername');
 Route::any('tour/search_by_date', 'TourController@searchByDate');
 Route::any('tour/add_passenger', 'TourController@addPassenger');
+
+
 
 Route::post('location/{userId}', 'LocationController@store');
 

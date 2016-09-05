@@ -6,7 +6,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/TourController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/TourController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/User.php" afterPath="$PROJECT_DIR$/app/User.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/tour_controller" afterPath="$PROJECT_DIR$/log/tour_controller" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/user_controller" afterPath="$PROJECT_DIR$/log/user_controller" />
     </list>
@@ -37,88 +36,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="17" column="65" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="65" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TourController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/TourController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="134" column="32" selection-start-line="134" selection-start-column="20" selection-end-line="134" selection-end-column="32" />
-              <folding>
-                <element signature="e#40#53#0#PHP" expanded="true" />
-                <element signature="e#338#1671#0#PHP" expanded="false" />
-                <element signature="e#1677#2510#0#PHP" expanded="false" />
-                <element signature="e#2516#2585#0#PHP" expanded="false" />
-                <element signature="e#2591#3273#0#PHP" expanded="false" />
-                <element signature="e#3279#3750#0#PHP" expanded="false" />
-                <element signature="e#3756#4307#0#PHP" expanded="false" />
-                <element signature="e#4313#5245#0#PHP" expanded="false" />
-                <element signature="e#5251#5526#0#PHP" expanded="false" />
-                <element signature="e#5532#6027#0#PHP" expanded="false" />
-                <element signature="e#6035#6987#0#PHP" expanded="false" />
-                <element signature="e#6993#7524#0#PHP" expanded="false" />
-                <element signature="e#7530#8259#0#PHP" expanded="false" />
-                <element signature="e#8265#9025#0#PHP" expanded="false" />
-                <element signature="e#9031#9119#0#PHP" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="UserController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="13" column="44" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
+            <state relative-caret-position="300">
+              <caret line="202" column="38" selection-start-line="202" selection-start-column="38" selection-end-line="202" selection-end-column="38" />
               <folding>
-                <element signature="e#366#1497#0#PHP" expanded="false" />
-                <element signature="e#1503#2604#0#PHP" expanded="false" />
-                <element signature="e#2610#3360#0#PHP" expanded="false" />
-                <element signature="e#3366#3947#0#PHP" expanded="false" />
-                <element signature="e#3953#4970#0#PHP" expanded="false" />
-                <element signature="e#4976#5995#0#PHP" expanded="false" />
-                <element signature="e#6295#6547#0#PHP" expanded="false" />
-                <element signature="e#6553#6839#0#PHP" expanded="false" />
-                <element signature="e#6847#7643#0#PHP" expanded="false" />
+                <element signature="e#380#1511#0#PHP" expanded="false" />
+                <element signature="e#1517#2618#0#PHP" expanded="false" />
+                <element signature="e#2624#3429#0#PHP" expanded="false" />
+                <element signature="e#3435#4016#0#PHP" expanded="false" />
+                <element signature="e#4022#5039#0#PHP" expanded="false" />
+                <element signature="e#5045#6064#0#PHP" expanded="false" />
+                <element signature="e#6070#6358#0#PHP" expanded="false" />
+                <element signature="e#7509#7761#0#PHP" expanded="false" />
+                <element signature="e#7767#8053#0#PHP" expanded="false" />
+                <element signature="e#8059#9119#0#PHP" expanded="false" />
+                <element signature="e#9844#10640#0#PHP" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="drive_to_travel_db.users" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/8032f608/f4105956-fe45-402a-9de3-e5adc38e3133/drive_to_travel_db.users">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="drive_to_travel_db.users_meta" pinned="false" current-in-tab="true">
-        <entry file="dbDummy://dbtable:/8032f608/f4105956-fe45-402a-9de3-e5adc38e3133/drive_to_travel_db.users_meta">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -187,9 +122,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
+    <option name="x" value="47" />
     <option name="y" value="24" />
-    <option name="width" value="1440" />
-    <option name="height" value="876" />
+    <option name="width" value="1319" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -315,21 +251,24 @@
       <workItem from="1472907967707" duration="4909000" />
       <workItem from="1472977763636" duration="5831000" />
       <workItem from="1472994717229" duration="4419000" />
+      <workItem from="1473007318144" duration="6961000" />
+      <workItem from="1473063484247" duration="5287000" />
+      <workItem from="1473080864366" duration="15000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111026000" />
+    <option name="totallyTimeSpent" value="123289000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="24" width="1440" height="876" extended-state="6" />
-    <editor active="false" />
+    <frame x="47" y="24" width="1319" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21018651" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35007173" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3493544" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -380,7 +319,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="6" />
+      <option name="time" value="7" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -510,18 +449,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/8032f608/f4105956-fe45-402a-9de3-e5adc38e3133/drive_to_travel_db.locations">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TestClient/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
@@ -575,18 +502,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="26" column="69" selection-start-line="26" selection-start-column="69" selection-end-line="26" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/8032f608/f4105956-fe45-402a-9de3-e5adc38e3133/drive_to_travel_db.friend_user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -686,16 +601,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Tour.php">
+    <entry file="file://$PROJECT_DIR$/.rocketeer/config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="19" column="40" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
-          <folding>
-            <element signature="e#710#807#0#PHP" expanded="false" />
-            <element signature="e#813#933#0#PHP" expanded="false" />
-            <element signature="e#939#1028#0#PHP" expanded="false" />
-            <element signature="e#1034#1142#0#PHP" expanded="false" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -708,7 +617,6 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -721,35 +629,10 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-297">
-          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.rocketeer/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="17" column="65" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/8032f608/f4105956-fe45-402a-9de3-e5adc38e3133/drive_to_travel_db.users">
+    <entry file="dbDummy://dbtable:/8032f608/f4105956-fe45-402a-9de3-e5adc38e3133/drive_to_travel_db.locations">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
@@ -758,49 +641,14 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="38" column="89" selection-start-line="38" selection-start-column="89" selection-end-line="38" selection-end-column="89" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="13" column="44" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
-          <folding>
-            <element signature="e#366#1497#0#PHP" expanded="false" />
-            <element signature="e#1503#2604#0#PHP" expanded="false" />
-            <element signature="e#2610#3360#0#PHP" expanded="false" />
-            <element signature="e#3366#3947#0#PHP" expanded="false" />
-            <element signature="e#3953#4970#0#PHP" expanded="false" />
-            <element signature="e#4976#5995#0#PHP" expanded="false" />
-            <element signature="e#6295#6547#0#PHP" expanded="false" />
-            <element signature="e#6553#6839#0#PHP" expanded="false" />
-            <element signature="e#6847#7643#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/TourController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="134" column="32" selection-start-line="134" selection-start-column="20" selection-end-line="134" selection-end-column="32" />
-          <folding>
-            <element signature="e#40#53#0#PHP" expanded="true" />
-            <element signature="e#338#1671#0#PHP" expanded="false" />
-            <element signature="e#1677#2510#0#PHP" expanded="false" />
-            <element signature="e#2516#2585#0#PHP" expanded="false" />
-            <element signature="e#2591#3273#0#PHP" expanded="false" />
-            <element signature="e#3279#3750#0#PHP" expanded="false" />
-            <element signature="e#3756#4307#0#PHP" expanded="false" />
-            <element signature="e#4313#5245#0#PHP" expanded="false" />
-            <element signature="e#5251#5526#0#PHP" expanded="false" />
-            <element signature="e#5532#6027#0#PHP" expanded="false" />
-            <element signature="e#6035#6987#0#PHP" expanded="false" />
-            <element signature="e#6993#7524#0#PHP" expanded="false" />
-            <element signature="e#7530#8259#0#PHP" expanded="false" />
-            <element signature="e#8265#9025#0#PHP" expanded="false" />
-            <element signature="e#9031#9119#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -813,7 +661,87 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/8032f608/f4105956-fe45-402a-9de3-e5adc38e3133/drive_to_travel_db.users">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/8032f608/f4105956-fe45-402a-9de3-e5adc38e3133/drive_to_travel_db.friend_user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Tour.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="20" column="69" selection-start-line="20" selection-start-column="69" selection-end-line="20" selection-end-column="69" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/TourController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="319" column="33" selection-start-line="319" selection-start-column="33" selection-end-line="319" selection-end-column="33" />
+          <folding>
+            <element signature="e#40#53#0#PHP" expanded="true" />
+            <element signature="e#338#1671#0#PHP" expanded="false" />
+            <element signature="e#1677#2570#0#PHP" expanded="false" />
+            <element signature="e#2576#3043#0#PHP" expanded="false" />
+            <element signature="e#3049#3731#0#PHP" expanded="false" />
+            <element signature="e#3737#4208#0#PHP" expanded="false" />
+            <element signature="e#4214#4765#0#PHP" expanded="false" />
+            <element signature="e#4771#5703#0#PHP" expanded="false" />
+            <element signature="e#5709#6485#0#PHP" expanded="false" />
+            <element signature="e#6491#6766#0#PHP" expanded="false" />
+            <element signature="e#6772#7267#0#PHP" expanded="false" />
+            <element signature="e#7275#8227#0#PHP" expanded="false" />
+            <element signature="e#10271#10359#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="202" column="38" selection-start-line="202" selection-start-column="38" selection-end-line="202" selection-end-column="38" />
+          <folding>
+            <element signature="e#380#1511#0#PHP" expanded="false" />
+            <element signature="e#1517#2618#0#PHP" expanded="false" />
+            <element signature="e#2624#3429#0#PHP" expanded="false" />
+            <element signature="e#3435#4016#0#PHP" expanded="false" />
+            <element signature="e#4022#5039#0#PHP" expanded="false" />
+            <element signature="e#5045#6064#0#PHP" expanded="false" />
+            <element signature="e#6070#6358#0#PHP" expanded="false" />
+            <element signature="e#7509#7761#0#PHP" expanded="false" />
+            <element signature="e#7767#8053#0#PHP" expanded="false" />
+            <element signature="e#8059#9119#0#PHP" expanded="false" />
+            <element signature="e#9844#10640#0#PHP" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

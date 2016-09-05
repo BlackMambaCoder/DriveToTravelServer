@@ -91,12 +91,31 @@ class TourController extends Controller
         $this->printToFile('Tours of driver '. $driver->username .':');
         $this->printToFile($tours);
 
+
         return $tours;
+//        return ["tours" => $tours, "driver" => $driver];
     }
 
     public function getAllTours()
     {
-        return Tour::all();
+        $tours = Tour::all();
+
+        foreach ($tours as $tour)
+        {
+            $driver = User::find($tour->driver_id);
+            $tour->driver_user_name = $driver->username;
+
+            if ($driver->rank == null)
+            {
+                $tour->driver_rank = -1.0;
+            }
+            else
+            {
+                $tour->driver_rank = $driver->rank;
+            }
+        }
+
+        return $tours;
     }
 
     public function searchByLocation()
@@ -173,6 +192,31 @@ class TourController extends Controller
         $user                       = $tour->user;
 
         return $this->rankDriver($user, $tour->rank);
+    }
+
+    public function addPassenger()
+    {
+        $this->printToFile("\n>>>>>>>>>> store method <<<<<<<<<<");
+        $requestData    = file_get_contents('php://input');
+        $jsonObject = json_decode($requestData, true);
+
+        $passengerId                = $jsonObject['passenger_id'];
+        $tourId                     = $jsonObject['tour_id'];
+
+//        $passengerId                = 65;// $jsonObject['passenger_id'];
+//        $tourId                     = 28;//$jsonObject['tour_id'];
+
+        $tour = Tour::find($tourId);
+        $passenger = User::find($passengerId);
+
+        $passengers = $tour->passengers;
+
+        array_push($passengers, $passenger->username);
+
+        $tour->passengers = $passengers;
+        $tour->save();
+
+        return $passenger;
     }
 
     private function printToFile($message) {

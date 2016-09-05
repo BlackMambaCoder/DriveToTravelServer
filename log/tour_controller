@@ -812,3 +812,129 @@
 <<< 04-Sep-2016 15:28:25 >>> d; d; d; d
 <<< 04-Sep-2016 15:28:25 >>> Tours of driver d:
 <<< 04-Sep-2016 15:28:25 >>> []
+<<< 04-Sep-2016 17:05:47 >>> 
+>>>>>>>>>> getDriversTours <<<<<<<<<<
+<<< 04-Sep-2016 17:05:47 >>> users json object
+<<< 04-Sep-2016 17:05:47 >>> {"id":62}
+<<< 04-Sep-2016 17:05:47 >>> driver
+<<< 04-Sep-2016 17:05:47 >>> leo; pass; leo; rado
+<<< 04-Sep-2016 17:05:47 >>> Tours of driver leo:
+<<< 04-Sep-2016 17:05:47 >>> []
+<<< 04-Sep-2016 17:06:24 >>> 
+>>>>>>>>>> store method <<<<<<<<<<
+<<< 04-Sep-2016 17:06:24 >>> users json object
+<<< 04-Sep-2016 17:06:24 >>> {"id":-1,"startlocation":"Niš","destinationlocation":"Zaječar","dateandtime":"Sun Sep 04 19:06:00 GMT+02:00 2016","driver_id":62,"rank":-1,"passengers":[]}
+<<< 04-Sep-2016 17:06:24 >>> driver
+<<< 04-Sep-2016 17:06:24 >>> leo; pass; leo; rado
+<<< 04-Sep-2016 17:06:25 >>> Tour created:
+<<< 04-Sep-2016 17:06:25 >>> {"driver_id":62,"updated_at":"2016-09-04 17:06:24","created_at":"2016-09-04 17:06:24","id":28,"passengers":[],"destinationlocation":"Zaje\u010dar","rank":-1,"startlocation":"Ni\u0161","dateandtime":"Sun Sep 04 19:06:00 GMT+02:00 2016","meta_data":{"date":"Sun Sep 04 2016","time":"19:06:00 GMT+02:00","startlocation":"Ni\u0161","destinationlocation":"Zaje\u010dar","dateandtime":"Sun Sep 04 19:06:00 GMT+02:00 2016","rank":-1,"passengers":[]}}
+<<< 04-Sep-2016 18:31:31 >>> 
+>>>>>>>>>> getDriversTours <<<<<<<<<<
+<<< 04-Sep-2016 18:31:31 >>> users json object
+<<< 04-Sep-2016 18:31:31 >>> {"id":62}
+<<< 04-Sep-2016 18:31:31 >>> driver
+<<< 04-Sep-2016 18:31:31 >>> leo; pass; leo; rado
+<<< 04-Sep-2016 18:31:31 >>> Tours of driver leo:
+<<< 04-Sep-2016 18:31:31 >>> [{"id":28,"created_at":"2016-09-04 17:06:24","updated_at":"2016-09-04 17:06:24","driver_id":62,"passengers":[],"destinationlocation":"Zaje\u010dar","rank":-1,"startlocation":"Ni\u0161","dateandtime":"Sun Sep 04 19:06:00 GMT+02:00 2016","meta_data":{"date":"Sun Sep 04 2016","time":"19:06:00 GMT+02:00","startlocation":"Ni\u0161","destinationlocation":"Zaje\u010dar","dateandtime":"Sun Sep 04 19:06:00 GMT+02:00 2016","rank":-1,"passengers":[]}}]
+<<< 04-Sep-2016 18:31:42 >>> 
+>>>>>>>>>> getDriversTours <<<<<<<<<<
+<<< 04-Sep-2016 18:31:42 >>> users json object
+<<< 04-Sep-2016 18:31:42 >>> {"id":62}
+<<< 04-Sep-2016 18:31:42 >>> driver
+<<< 04-Sep-2016 18:31:42 >>> leo; pass; leo; rado
+<<< 04-Sep-2016 18:31:42 >>> Tours of driver leo:
+<<< 04-Sep-2016 18:31:42 >>> [{"id":28,"created_at":"2016-09-04 17:06:24","updated_at":"2016-09-04 17:06:24","driver_id":62,"passengers":[],"destinationlocation":"Zaje\u010dar","rank":-1,"startlocation":"Ni\u0161","dateandtime":"Sun Sep 04 19:06:00 GMT+02:00 2016","meta_data":{"date":"Sun Sep 04 2016","time":"19:06:00 GMT+02:00","startlocation":"Ni\u0161","destinationlocation":"Zaje\u010dar","dateandtime":"Sun Sep 04 19:06:00 GMT+02:00 2016","rank":-1,"passengers":[]}}]
+<<< 04-Sep-2016 19:33:19 >>> 
+>>>>>>>>>> getDriversTours <<<<<<<<<<
+<<< 04-Sep-2016 19:33:19 >>> users json object
+<<< 04-Sep-2016 19:33:19 >>> {"id":62}
+<<< 04-Sep-2016 19:33:19 >>> driver
+<<< 04-Sep-2016 19:33:19 >>> leo; pass; leo; rado
+<<< 04-Sep-2016 19:33:19 >>> Tours of driver leo:
+<<< 04-Sep-2016 19:33:19 >>> [{"id":28,"created_at":"2016-09-04 17:06:24","updated_at":"2016-09-04 17:06:24","driver_id":62,"passengers":[],"destinationlocation":"Zaje\u010dar","rank":-1,"startlocation":"Ni\u0161","dateandtime":"Sun Sep 04 19:06:00 GMT+02:00 2016","meta_data":{"date":"Sun Sep 04 2016","time":"19:06:00 GMT+02:00","startlocation":"Ni\u0161","destinationlocation":"Zaje\u010dar","dateandtime":"Sun Sep 04 19:06:00 GMT+02:00 2016","rank":-1,"passengers":[]}}]
+<<< 04-Sep-2016 19:58:50 >>> 
+>>>>>>>>>> getDriversTours <<<<<<<<<<
+<<< 04-Sep-2016 19:58:50 >>> users json object
+<<< 04-Sep-2016 19:58:50 >>> {"id":66}
+<<< 04-Sep-2016 19:58:50 >>> driver
+<<< 04-Sep-2016 19:58:50 >>> Pica;  ; Ses; Kobasica
+<<< 04-Sep-2016 19:58:50 >>> Tours of driver Pica:
+<<< 04-Sep-2016 19:58:50 >>> []
+<<< 04-Sep-2016 20:00:33 >>> 
+>>>>>>>>>> getDriversTours <<<<<<<<<<
+<<< 04-Sep-2016 20:00:33 >>> users json object
+<<< 04-Sep-2016 20:00:33 >>> {"id":66}
+<<< 04-Sep-2016 20:00:33 >>> driver
+<<< 04-Sep-2016 20:00:33 >>> Pica;  ; Ses; Kobasica
+<<< 04-Sep-2016 20:00:33 >>> Tours of driver Pica:
+<<< 04-Sep-2016 20:00:33 >>> []
+<<< 04-Sep-2016 20:02:02 >>> 
+>>>>>>>>>> getDriversTours <<<<<<<<<<
+<<< 04-Sep-2016 20:02:02 >>> users json object
+<<< 04-Sep-2016 20:02:02 >>> {"id":66}
+<<< 04-Sep-2016 20:02:02 >>> driver
+<<< 04-Sep-2016 20:02:02 >>> Pica;  ; Ses; Kobasica
+<<< 04-Sep-2016 20:02:02 >>> Tours of driver Pica:
+<<< 04-Sep-2016 20:02:02 >>> []
+<<< 04-Sep-2016 20:02:14 >>> 
+>>>>>>>>>> store method <<<<<<<<<<
+<<< 04-Sep-2016 20:02:14 >>> users json object
+<<< 04-Sep-2016 20:02:14 >>> {"id":-1,"startlocation":"H","destinationlocation":"H","dateandtime":"Wed Oct 04 22:02:00 GMT+01:00 3916","driver_id":66,"rank":-1,"passengers":[]}
+<<< 04-Sep-2016 20:02:14 >>> driver
+<<< 04-Sep-2016 20:02:14 >>> Pica;  ; Ses; Kobasica
+<<< 04-Sep-2016 20:02:14 >>> Tour created:
+<<< 04-Sep-2016 20:02:14 >>> {"driver_id":66,"updated_at":"2016-09-04 20:02:14","created_at":"2016-09-04 20:02:14","id":29,"passengers":[],"destinationlocation":"H","rank":-1,"startlocation":"H","dateandtime":"Wed Oct 04 22:02:00 GMT+01:00 3916","meta_data":{"date":"Wed Oct 04 3916","time":"22:02:00 GMT+01:00","startlocation":"H","destinationlocation":"H","dateandtime":"Wed Oct 04 22:02:00 GMT+01:00 3916","rank":-1,"passengers":[]}}
+<<< 04-Sep-2016 20:03:20 >>> 
+>>>>>>>>>> getDriversTours <<<<<<<<<<
+<<< 04-Sep-2016 20:03:20 >>> users json object
+<<< 04-Sep-2016 20:03:20 >>> {"id":66}
+<<< 04-Sep-2016 20:03:20 >>> driver
+<<< 04-Sep-2016 20:03:20 >>> Pica;  ; Ses; Kobasica
+<<< 04-Sep-2016 20:03:20 >>> Tours of driver Pica:
+<<< 04-Sep-2016 20:03:20 >>> [{"id":29,"created_at":"2016-09-04 20:02:14","updated_at":"2016-09-04 20:02:14","driver_id":66,"passengers":[],"destinationlocation":"H","rank":-1,"startlocation":"H","dateandtime":"Wed Oct 04 22:02:00 GMT+01:00 3916","meta_data":{"date":"Wed Oct 04 3916","time":"22:02:00 GMT+01:00","startlocation":"H","destinationlocation":"H","dateandtime":"Wed Oct 04 22:02:00 GMT+01:00 3916","rank":-1,"passengers":[]}}]
+<<< 04-Sep-2016 20:03:32 >>> 
+>>>>>>>>>> getDriversTours <<<<<<<<<<
+<<< 04-Sep-2016 20:03:32 >>> users json object
+<<< 04-Sep-2016 20:03:32 >>> {"id":66}
+<<< 04-Sep-2016 20:03:32 >>> driver
+<<< 04-Sep-2016 20:03:32 >>> Pica;  ; Ses; Kobasica
+<<< 04-Sep-2016 20:03:32 >>> Tours of driver Pica:
+<<< 04-Sep-2016 20:03:32 >>> [{"id":29,"created_at":"2016-09-04 20:02:14","updated_at":"2016-09-04 20:02:14","driver_id":66,"passengers":[],"destinationlocation":"H","rank":-1,"startlocation":"H","dateandtime":"Wed Oct 04 22:02:00 GMT+01:00 3916","meta_data":{"date":"Wed Oct 04 3916","time":"22:02:00 GMT+01:00","startlocation":"H","destinationlocation":"H","dateandtime":"Wed Oct 04 22:02:00 GMT+01:00 3916","rank":-1,"passengers":[]}}]
+<<< 04-Sep-2016 20:22:17 >>> 
+>>>>>>>>>> getDriversTours <<<<<<<<<<
+<<< 04-Sep-2016 20:22:17 >>> users json object
+<<< 04-Sep-2016 20:22:17 >>> {"id":66}
+<<< 04-Sep-2016 20:22:17 >>> driver
+<<< 04-Sep-2016 20:22:17 >>> Pica;  ; Ses; Kobasica
+<<< 04-Sep-2016 20:22:17 >>> Tours of driver Pica:
+<<< 04-Sep-2016 20:22:17 >>> [{"id":29,"created_at":"2016-09-04 20:02:14","updated_at":"2016-09-04 20:02:14","driver_id":66,"passengers":[],"destinationlocation":"H","rank":-1,"startlocation":"H","dateandtime":"Wed Oct 04 22:02:00 GMT+01:00 3916","meta_data":{"date":"Wed Oct 04 3916","time":"22:02:00 GMT+01:00","startlocation":"H","destinationlocation":"H","dateandtime":"Wed Oct 04 22:02:00 GMT+01:00 3916","rank":-1,"passengers":[]}}]
+<<< 04-Sep-2016 20:58:51 >>> 
+>>>>>>>>>> store method <<<<<<<<<<
+<<< 04-Sep-2016 21:00:38 >>> 
+>>>>>>>>>> store method <<<<<<<<<<
+<<< 04-Sep-2016 21:01:22 >>> 
+>>>>>>>>>> store method <<<<<<<<<<
+<<< 04-Sep-2016 21:01:23 >>> 
+>>>>>>>>>> store method <<<<<<<<<<
+<<< 04-Sep-2016 21:02:56 >>> 
+>>>>>>>>>> store method <<<<<<<<<<
+<<< 04-Sep-2016 21:03:02 >>> 
+>>>>>>>>>> store method <<<<<<<<<<
+<<< 04-Sep-2016 21:03:21 >>> 
+>>>>>>>>>> store method <<<<<<<<<<
+<<< 04-Sep-2016 21:04:01 >>> 
+>>>>>>>>>> store method <<<<<<<<<<
+<<< 04-Sep-2016 21:05:29 >>> 
+>>>>>>>>>> store method <<<<<<<<<<
+<<< 04-Sep-2016 21:05:34 >>> 
+>>>>>>>>>> store method <<<<<<<<<<
+<<< 04-Sep-2016 21:09:33 >>> 
+>>>>>>>>>> store method <<<<<<<<<<
+<<< 05-Sep-2016 09:16:52 >>> 
+>>>>>>>>>> getDriversTours <<<<<<<<<<
+<<< 05-Sep-2016 09:16:52 >>> users json object
+<<< 05-Sep-2016 09:16:52 >>> {"id":67}
+<<< 05-Sep-2016 09:16:52 >>> driver
+<<< 05-Sep-2016 09:16:52 >>> ddddd; pass; d; d
+<<< 05-Sep-2016 09:16:52 >>> Tours of driver ddddd:
+<<< 05-Sep-2016 09:16:52 >>> []
